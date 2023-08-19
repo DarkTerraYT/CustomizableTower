@@ -80,6 +80,8 @@ public class CustomizableTowerClass : ModTower
     public override int MiddlePathUpgrades => 0;
 
     public override int BottomPathUpgrades => 0;
+    public override string Icon => "CustomizedTower-Portrait";
+    public override string Portrait => "CustomizedTower-Portrait";
     public override string DisplayName => "Customizable Tower";
     public override string Description => "Please don't use this in competitive modes, one: it could get your account flagged, and two: it ruins the fun for others.";
 
