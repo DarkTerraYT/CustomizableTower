@@ -36,8 +36,8 @@ public class CustomizableTower : BloonsTD6Mod
     };
     public static readonly ModSettingDouble Speed = new(1)
     {
-        displayName = "Attack Speed (Lower Value = Attacks Faster)",
-        min = 0.00000000001,
+        displayName = "Attack Speed (In Seconds)",
+        min = 0,
         max = 15,
         requiresRestart = true
     };
