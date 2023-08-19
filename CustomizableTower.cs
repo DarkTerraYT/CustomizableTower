@@ -22,7 +22,7 @@ public class CustomizableTower : BloonsTD6Mod
         max = 999999999,
         requiresRestart = true
     };
-    public static readonly ModSettingDouble Range = new(1.0)
+    public static readonly ModSettingDouble Range = new(5.0)
     {
         min = 1.0,
         max = 9999999999,
