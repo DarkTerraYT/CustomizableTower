@@ -15,10 +15,6 @@ namespace OpTower;
 
 public class CustomizableTower : BloonsTD6Mod
 {
-    public override void OnApplicationStart()
-    {
-        ModHelper.Msg<CustomizableTower>("OpTower loaded!");
-    }
     public static readonly ModSettingCategory Changes = new("Customizable Things, Restart the Game After Modification of These Config Options.");
     public static readonly ModSettingInt Cost = new(0)
     {
