@@ -8,16 +8,16 @@ using Il2CppAssets.Scripts.Models.TowerSets;
 using MelonLoader;
 using OpTower;
 
-[assembly: MelonInfo(typeof(OpTower.CustomizeableTower), ModHelperData.Name, ModHelperData.Version, ModHelperData.RepoOwner)]
+[assembly: MelonInfo(typeof(OpTower.CustomizableTower), ModHelperData.Name, ModHelperData.Version, ModHelperData.RepoOwner)]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 
 namespace OpTower;
 
-public class CustomizeableTower : BloonsTD6Mod
+public class CustomizableTower : BloonsTD6Mod
 {
     public override void OnApplicationStart()
     {
-        ModHelper.Msg<CustomizeableTower>("OpTower loaded!");
+        ModHelper.Msg<CustomizableTower>("OpTower loaded!");
     }
     public static readonly ModSettingInt Cost = new(0)
     {
@@ -61,13 +61,13 @@ public class CustomizeableTower : BloonsTD6Mod
         displayName = "Can See Camo (Not Affected by Can Hit All Bloons)"
     };
 }
-public class CustomizeableTowerClass : ModTower
+public class CustomizableTowerClass : ModTower
 {
     public override TowerSet TowerSet => TowerSet.Primary;
 
     public override string BaseTower => TowerType.NinjaMonkey;
 
-    public override int Cost => CustomizeableTower.Cost;
+    public override int Cost => CustomizableTower.Cost;
 
     public override int TopPathUpgrades => 0 ;
 
@@ -80,54 +80,54 @@ public class CustomizeableTowerClass : ModTower
     public override void ModifyBaseTowerModel(TowerModel towerModel)
     {
         towerModel.ApplyDisplay<CustomizedTowerDisplay>();
-        towerModel.range += CustomizeableTower.Range;
-        towerModel.GetWeapon().rate *= CustomizeableTower.Speed;
-        towerModel.GetAttackModel().range +=CustomizeableTower.Range;
+        towerModel.range += CustomizableTower.Range;
+        towerModel.GetWeapon().rate *= CustomizableTower.Speed;
+        towerModel.GetAttackModel().range +=CustomizableTower.Range;
         var proj = towerModel.GetWeapon().projectile;
         proj.ApplyDisplay<CustomizedProjectileDisplay>();
-        proj.GetDamageModel().damage = CustomizeableTower.Damage;
+        proj.GetDamageModel().damage = CustomizableTower.Damage;
         var DamageModel = proj.GetDamageModel();
-        if (CustomizeableTower.HitAll)
+        if (CustomizableTower.HitAll)
         {
             proj.GetDamageModel().immuneBloonProperties = Il2Cpp.BloonProperties.None;
         }
-        else if (!CustomizeableTower.HitLead && !CustomizeableTower.HitPurple && !CustomizeableTower.HitFrozen)
+        else if (!CustomizableTower.HitLead && !CustomizableTower.HitPurple && !CustomizableTower.HitFrozen)
         {
             DamageModel.immuneBloonProperties = Il2Cpp.BloonProperties.Lead | Il2Cpp.BloonProperties.Purple | Il2Cpp.BloonProperties.Frozen; 
         }
-        else if (!CustomizeableTower.HitLead && !CustomizeableTower.HitPurple && CustomizeableTower.HitFrozen)
+        else if (!CustomizableTower.HitLead && !CustomizableTower.HitPurple && CustomizableTower.HitFrozen)
         {
             DamageModel.immuneBloonProperties = Il2Cpp.BloonProperties.Purple | Il2Cpp.BloonProperties.Lead;
         }
-        else if (CustomizeableTower.HitLead && !CustomizeableTower.HitPurple && !CustomizeableTower.HitFrozen)
+        else if (CustomizableTower.HitLead && !CustomizableTower.HitPurple && !CustomizableTower.HitFrozen)
         {
             DamageModel.immuneBloonProperties = Il2Cpp.BloonProperties.Purple | Il2Cpp.BloonProperties.Frozen;
         }
-        else if (!CustomizeableTower.HitLead && CustomizeableTower.HitPurple && !CustomizeableTower.HitFrozen)
+        else if (!CustomizableTower.HitLead && CustomizableTower.HitPurple && !CustomizableTower.HitFrozen)
         {
             DamageModel.immuneBloonProperties = Il2Cpp.BloonProperties.Lead | Il2Cpp.BloonProperties.Frozen;
         }
-        else if (CustomizeableTower.HitLead && !CustomizeableTower.HitPurple && CustomizeableTower.HitFrozen)
+        else if (CustomizableTower.HitLead && !CustomizableTower.HitPurple && CustomizableTower.HitFrozen)
         {
             DamageModel.immuneBloonProperties = Il2Cpp.BloonProperties.Purple;
         }
-        else if (CustomizeableTower.HitLead && CustomizeableTower.HitPurple && !CustomizeableTower.HitFrozen)
+        else if (CustomizableTower.HitLead && CustomizableTower.HitPurple && !CustomizableTower.HitFrozen)
         {
             DamageModel.immuneBloonProperties = Il2Cpp.BloonProperties.Frozen;
         }
-        else if (!CustomizeableTower.HitLead && CustomizeableTower.HitPurple && CustomizeableTower.HitFrozen)
+        else if (!CustomizableTower.HitLead && CustomizableTower.HitPurple && CustomizableTower.HitFrozen)
         {
             DamageModel.immuneBloonProperties = Il2Cpp.BloonProperties.Lead;
         }
-        else if (CustomizeableTower.HitLead && CustomizeableTower.HitPurple && CustomizeableTower.HitFrozen)
+        else if (CustomizableTower.HitLead && CustomizableTower.HitPurple && CustomizableTower.HitFrozen)
         {
             DamageModel.immuneBloonProperties = Il2Cpp.BloonProperties.None;
         }
-        if (CustomizeableTower.SeeCamo)
+        if (CustomizableTower.SeeCamo)
         {
             towerModel.GetDescendants<FilterInvisibleModel>().ForEach(model => model.isActive = false);
         }
-        else if (!CustomizeableTower.SeeCamo)
+        else if (!CustomizableTower.SeeCamo)
         {
             towerModel.GetDescendants<FilterInvisibleModel>().ForEach(model => model.isActive = true);
         }
