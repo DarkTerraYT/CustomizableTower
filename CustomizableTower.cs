@@ -19,46 +19,56 @@ public class CustomizableTower : BloonsTD6Mod
     {
         ModHelper.Msg<CustomizableTower>("OpTower loaded!");
     }
+    public static readonly ModSettingCategory Changes = new("Customizable Things, Restart the Game After Modification of These Config Options.");
     public static readonly ModSettingInt Cost = new(0)
     {
         min = 0,
-        max = 999999999
+        max = 999999999,
+        requiresRestart = true
     };
     public static readonly ModSettingDouble Range = new(1.0)
     {
         min = 1.0,
-        max = 9999999999
+        max = 9999999999,
+        requiresRestart = true
     };
     public static readonly ModSettingInt Damage = new(1)
     {
         min = 1,
         max = 999999999,
+        requiresRestart = true
     };
     public static readonly ModSettingDouble Speed = new(1)
     {
         displayName = "Attack Speed (Lower Value = Attacks Faster)",
         min = 0.00000000001,
         max = 15,
+        requiresRestart = true
     };
     public static readonly ModSettingBool HitAll = new(false)
     {
-        displayName = "Can Hit All Bloons"
+        displayName = "Can Hit All Bloons",
+        requiresRestart = true
     };
     public static readonly ModSettingBool HitLead = new(false)
     {
-        displayName = "Can Hit Leads"
+        displayName = "Can Hit Leads",
+        requiresRestart = true
     };
     public static readonly ModSettingBool HitPurple = new(false)
     {
-        displayName = "Can Hit Purple"
+        displayName = "Can Hit Purple",
+        requiresRestart = true
     };
     public static readonly ModSettingBool HitFrozen = new(false)
     {
-        displayName = "Can Pop Frozen Bloons"
+        displayName = "Can Pop Frozen Bloons",
+        requiresRestart = true
     };
     public static readonly ModSettingBool SeeCamo = new(true)
     {
-        displayName = "Can See Camo (Not Affected by Can Hit All Bloons)"
+        displayName = "Can See Camo (Not Affected by Can Hit All Bloons)",
+        requiresRestart = true
     };
 }
 public class CustomizableTowerClass : ModTower
