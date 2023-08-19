@@ -21,27 +21,28 @@ public class CustomizeableTower : BloonsTD6Mod
     }
     public static readonly ModSettingInt Cost = new(0)
     {
-        minValue = 0,
-        maxValue = 9999999
+        min = 0,
+        max = 9999999,
+        slider = true
     };
     public static readonly ModSettingDouble Range = new(1.0)
     {
-        minValue = 1.0,
-        maxValue = 99999999.9,
-        isSlider = true
+        min = 1.0,
+        max = 99999999.9,
+        slider = true
     };
     public static readonly ModSettingInt Damage = new(1)
     {
-        minValue = 1,
-        maxValue = 999999999,
-        isSlider = true
+        min = 1,
+        max = 999999999,
+        slider = true
     };
     public static readonly ModSettingDouble Speed = new(1)
     {
         displayName = "Attack Speed",
-        minValue = 0.00000000001,
-        maxValue = 15,
-        isSlider = true
+        min = 0.00000000001,
+        max = 15,
+        slider = true
     };
     public static readonly ModSettingBool HitAll = new(false)
     {
