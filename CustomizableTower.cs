@@ -88,9 +88,9 @@ public class CustomizableTowerClass : ModTower
     public override void ModifyBaseTowerModel(TowerModel towerModel)
     {
         towerModel.ApplyDisplay<CustomizedTowerDisplay>();
-        towerModel.range += CustomizableTower.Range;
-        towerModel.GetWeapon().rate *= CustomizableTower.Speed;
-        towerModel.GetAttackModel().range +=CustomizableTower.Range;
+        towerModel.range = CustomizableTower.Range;
+        towerModel.GetWeapon().rate = CustomizableTower.Speed;
+        towerModel.GetAttackModel().range =CustomizableTower.Range;
         var proj = towerModel.GetWeapon().projectile;
         proj.ApplyDisplay<CustomizedProjectileDisplay>();
         proj.GetDamageModel().damage = CustomizableTower.Damage;
