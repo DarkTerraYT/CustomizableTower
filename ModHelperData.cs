@@ -4,7 +4,7 @@ public static class ModHelperData
 {
     public const string WorksOnVersion = "37.3";
     public const string Version = "2.0.0";
-    public const string Name = "Customizeable Tower";
+    public const string Name = "Customizable Tower";
 
     public const string Description = "Adds a Completely Customizeable Tower to The Game. You Can Customize it's Stats in The Config For The Mod.\n\nPlease don't use this in competitive modes, one: it could get your account flagged, and two: it ruins the fun for others.";
 
