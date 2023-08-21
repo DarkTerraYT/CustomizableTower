@@ -3,7 +3,7 @@
     <img align="right" alt="Download" height="75" src="https://raw.githubusercontent.com/gurrenm3/BTD-Mod-Helper/master/BloonsTD6%20Mod%20Helper/Resources/DownloadBtn.png">
 </a>
 
-<h1 align="center">Customizeable Tower</h1>
+<h1 align="center">Customizable Tower</h1>
 
 Adds a Completely Customizeable Tower to The Game. You Can Customize it's Stats in The Config For The Mod.
 
