@@ -1,4 +1,4 @@
-namespace OpTower;
+namespace CustomizableTower;
 
 public static class ModHelperData
 {

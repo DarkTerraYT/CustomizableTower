@@ -1,7 +1,7 @@
 ﻿using BTD_Mod_Helper.Api.Display;
 using Il2CppAssets.Scripts.Unity.Display;
 
-namespace OpTower
+namespace CustomizableTower
 {
     internal class CustomizedTowerDisplay : ModDisplay2D
     {
