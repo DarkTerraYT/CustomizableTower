@@ -799,4 +799,7 @@ internal class CustomizableTowerClass : ModTower
             towerModel.GetDescendants<FilterInvisibleModel>().ForEach(model => model.isActive = true);
         }
     }
+    public override bool IsValidCrosspath(int[] tiers) =>
+        ModHelper.HasMod("UltimateCrosspathing") ? true : base.IsValidCrosspath(tiers);
 }
+
