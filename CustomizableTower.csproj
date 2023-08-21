@@ -11,4 +11,17 @@
     </PropertyGroup>
 
     <Import Project="..\btd6.targets" />
+
+    <ItemGroup>
+      <None Remove="BottomPath\BUpgrade1-Icon.png" />
+      <None Remove="BottomPath\BUpgrade2-Icon.png" />
+      <None Remove="BottomPath\BUpgrade3-Icon.png" />
+      <None Remove="BottomPath\BUpgrade4-Icon.png" />
+      <None Remove="BottomPath\BUpgrade5-Icon.png" />
+      <None Remove="MiddlePath\MUpgrade1-Icon.png" />
+      <None Remove="MiddlePath\MUpgrade2-Icon.png" />
+      <None Remove="MiddlePath\MUpgrade3-Icon.png" />
+      <None Remove="MiddlePath\MUpgrade4-Icon.png" />
+      <None Remove="MiddlePath\MUpgrade5-Icon.png" />
+    </ItemGroup>
 </Project>
