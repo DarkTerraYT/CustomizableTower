@@ -10,7 +10,7 @@ Adds a Completely Customizable Tower to The Game. You Can Customize it's Stats i
 Please don't use this in competitive modes, one: it could get your account flagged, and two: it ruins the fun for others.
 
 <a href="https://discord.gg/xegnVEBRuE">
-    <img align="left" alt="Discord" src="discord.png">
+    <img align="left" alt="Discord" height = "60" src="discord.png">
 </a>
 <h2 align="center"> Join The Discord!</h2>
 
