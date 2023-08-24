@@ -9,4 +9,9 @@ Adds a Completely Customizable Tower to The Game. You Can Customize it's Stats i
 
 Please don't use this in competitive modes, one: it could get your account flagged, and two: it ruins the fun for others.
 
+<a href="https://discord.gg/xegnVEBRuE">
+    <img align="left" alt="Discord" src="discord.png">
+</a>
+<h2 align="center"> Join The Discord!</h2>
+
 [![Requires BTD6 Mod Helper](https://raw.githubusercontent.com/gurrenm3/BTD-Mod-Helper/master/banner.png)](https://github.com/gurrenm3/BTD-Mod-Helper#readme)
