@@ -1028,81 +1028,80 @@ public class CustomizableTower : BloonsTD6Mod
         category = BottomHits,
         displayName = "Bottom Path Upgrade 5 Hit Frozen"
     };
-}
-internal class CustomizableTowerClass : ModTower
-{
-    public override TowerSet TowerSet => TowerSet.Primary;
-
-    public override string BaseTower => TowerType.NinjaMonkey;
-
-    public override int Cost => CustomizableTower.Cost;
-
-    public override int TopPathUpgrades => CustomizableTower.TopPathUpgrades;
-
-    public override int MiddlePathUpgrades => CustomizableTower.MiddlePathUpgrades;
-
-    public override int BottomPathUpgrades => CustomizableTower.BottomPathUpgrades;
-    public override string Icon => "CustomizedTower-Portrait";
-    public override string Portrait => "CustomizedTower-Portrait";
-    public override string DisplayName => "Customizable Tower";
-    public override string Description => "Please don't use this in competitive modes, one: it could get your account flagged, and two: it ruins the fun for others.";
-
-    public override void ModifyBaseTowerModel(TowerModel towerModel)
+    internal static readonly ModSettingCategory UpgradeCamoOptions = new("Upgrade Camo Options");
+    internal static readonly ModSettingBool T1Camo = new(false)
     {
-        towerModel.ApplyDisplay<CustomizedTowerDisplay>();
-        towerModel.range = CustomizableTower.Range;
-        towerModel.GetWeapon().rate = CustomizableTower.Speed;
-        towerModel.GetAttackModel().range =CustomizableTower.Range;
-        var proj = towerModel.GetWeapon().projectile;
-        proj.ApplyDisplay<CustomizedProjectileDisplay>();
-        proj.GetDamageModel().damage = CustomizableTower.Damage;
-        var DamageModel = proj.GetDamageModel();
-        if (CustomizableTower.HitAll)
-        {
-            proj.GetDamageModel().immuneBloonProperties = Il2Cpp.BloonProperties.None;
-        }
-        else if (!CustomizableTower.HitLead && !CustomizableTower.HitPurple && !CustomizableTower.HitFrozen)
-        {
-            DamageModel.immuneBloonProperties = Il2Cpp.BloonProperties.Lead | Il2Cpp.BloonProperties.Purple | Il2Cpp.BloonProperties.Frozen; 
-        }
-        else if (!CustomizableTower.HitLead && !CustomizableTower.HitPurple && CustomizableTower.HitFrozen)
-        {
-            DamageModel.immuneBloonProperties = Il2Cpp.BloonProperties.Purple | Il2Cpp.BloonProperties.Lead;
-        }
-        else if (CustomizableTower.HitLead && !CustomizableTower.HitPurple && !CustomizableTower.HitFrozen)
-        {
-            DamageModel.immuneBloonProperties = Il2Cpp.BloonProperties.Purple | Il2Cpp.BloonProperties.Frozen;
-        }
-        else if (!CustomizableTower.HitLead && CustomizableTower.HitPurple && !CustomizableTower.HitFrozen)
-        {
-            DamageModel.immuneBloonProperties = Il2Cpp.BloonProperties.Lead | Il2Cpp.BloonProperties.Frozen;
-        }
-        else if (CustomizableTower.HitLead && !CustomizableTower.HitPurple && CustomizableTower.HitFrozen)
-        {
-            DamageModel.immuneBloonProperties = Il2Cpp.BloonProperties.Purple;
-        }
-        else if (CustomizableTower.HitLead && CustomizableTower.HitPurple && !CustomizableTower.HitFrozen)
-        {
-            DamageModel.immuneBloonProperties = Il2Cpp.BloonProperties.Frozen;
-        }
-        else if (!CustomizableTower.HitLead && CustomizableTower.HitPurple && CustomizableTower.HitFrozen)
-        {
-            DamageModel.immuneBloonProperties = Il2Cpp.BloonProperties.Lead;
-        }
-        else if (CustomizableTower.HitLead && CustomizableTower.HitPurple && CustomizableTower.HitFrozen)
-        {
-            DamageModel.immuneBloonProperties = Il2Cpp.BloonProperties.None;
-        }
-        if (CustomizableTower.SeeCamo)
-        {
-            towerModel.GetDescendants<FilterInvisibleModel>().ForEach(model => model.isActive = false);
-        }
-        else if (!CustomizableTower.SeeCamo)
-        {
-            towerModel.GetDescendants<FilterInvisibleModel>().ForEach(model => model.isActive = true);
-        }
-    }
-    public override bool IsValidCrosspath(int[] tiers) =>
-        ModHelper.HasMod("UltimateCrosspathing") ? true : base.IsValidCrosspath(tiers);
+        category = UpgradeCamoOptions,
+        displayName = "Top Path Upgrade 1 Camo"
+    };
+    internal static readonly ModSettingBool T2Camo = new(false)
+    {
+        category = UpgradeCamoOptions,
+        displayName = "Top Path Upgrade 2 Camo"
+    };
+    internal static readonly ModSettingBool T3Camo = new(false)
+    {
+        category = UpgradeCamoOptions,
+        displayName = "Top Path Upgrade 3 Camo"
+    };
+    internal static readonly ModSettingBool T4Camo = new(false)
+    {
+        category = UpgradeCamoOptions,
+        displayName = "Top Path Upgrade 4 Camo"
+    };
+    internal static readonly ModSettingBool T5Camo = new(false)
+    {
+        category = UpgradeCamoOptions,
+        displayName = "Top Path Upgrade 5 Camo"
+    };
+    internal static readonly ModSettingBool M1Camo = new(false)
+    {
+        category = UpgradeCamoOptions,
+        displayName = "Middle Path Upgrade 1 Camo"
+    };
+    internal static readonly ModSettingBool M2Camo = new(false)
+    {
+        category = UpgradeCamoOptions,
+        displayName = "Middle Path Upgrade 2 Camo"
+    };
+    internal static readonly ModSettingBool M3Camo = new(false)
+    {
+        category = UpgradeCamoOptions,
+        displayName = "Middle Path Upgrade 3 Camo"
+    };
+    internal static readonly ModSettingBool M4Camo = new(false)
+    {
+        category = UpgradeCamoOptions,
+        displayName = "Middle Path Upgrade 4 Camo"
+    };
+    internal static readonly ModSettingBool M5Camo = new(false)
+    {
+        category = UpgradeCamoOptions,
+        displayName = "Middle Path Upgrade 5 Camo"
+    };
+    internal static readonly ModSettingBool B1Camo = new(false)
+    {
+        category = UpgradeCamoOptions,
+        displayName = "Bottom Path Upgrade 1 Camo"
+    };
+    internal static readonly ModSettingBool B2Camo = new(false)
+    {
+        category = UpgradeCamoOptions,
+        displayName = "Bottom Path Upgrade 2 Camo"
+    };
+    internal static readonly ModSettingBool B3Camo = new(false)
+    {
+        category = UpgradeCamoOptions,
+        displayName = "Bottom Path Upgrade 3 Camo"
+    };
+    internal static readonly ModSettingBool B4Camo = new(false)
+    {
+        category = UpgradeCamoOptions,
+        displayName = "Bottom Path Upgrade 4 Camo"
+    };
+    internal static readonly ModSettingBool B5Camo = new(false)
+    {
+        category = UpgradeCamoOptions,
+        displayName = "Bottom Path Upgrade 5 Camo"
+    };
 }
-
