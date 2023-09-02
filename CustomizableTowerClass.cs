@@ -4,6 +4,7 @@ using Il2CppAssets.Scripts.Models.Towers.Filters;
 using Il2CppAssets.Scripts.Models.Towers;
 using Il2CppAssets.Scripts.Models.TowerSets;
 using BTD_Mod_Helper.Extensions;
+using Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions;
 
 namespace CustomizableTower
 {
@@ -29,6 +30,7 @@ namespace CustomizableTower
         {
             towerModel.ApplyDisplay<CustomizedTowerDisplay>();
             towerModel.range = CustomizableTower.Range;
+            towerModel.GetWeapon().projectile.pierce = CustomizableTower.Pierce;
             towerModel.GetWeapon().rate = CustomizableTower.Speed;
             towerModel.GetAttackModel().range = CustomizableTower.Range;
             var proj = towerModel.GetWeapon().projectile;
@@ -79,6 +81,7 @@ namespace CustomizableTower
             {
                 towerModel.GetDescendants<FilterInvisibleModel>().ForEach(model => model.isActive = true);
             }
+            towerModel.GetWeapon().emission = new ArcEmissionModel("Emission", CustomizableTower.MultishotNumber, CustomizableTower.MultiShotOffset, CustomizableTower.MultiShotRotation, null, false, false);
         }
         public override bool IsValidCrosspath(int[] tiers) =>
             ModHelper.HasMod("UltimateCrosspathing") ? true : base.IsValidCrosspath(tiers);

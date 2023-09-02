@@ -7,6 +7,7 @@ using Il2CppAssets.Scripts.Models.Towers.Filters;
 using Il2CppAssets.Scripts.Models.TowerSets;
 using MelonLoader;
 using CustomizableTower;
+using Il2CppNinjaKiwi.NKMulti.IO;
 
 [assembly: MelonInfo(typeof(CustomizableTower.CustomizableTower), ModHelperData.Name, ModHelperData.Version, ModHelperData.RepoOwner)]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
@@ -729,379 +730,476 @@ public class CustomizableTower : BloonsTD6Mod
     internal static readonly ModSettingBool T1HitAll = new(false)
     {
         category = TopHits,
-        displayName = "Top Path Upgrade 1 Hit All"
+        displayName = "Top Path Upgrade 1 Hit All",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool T1HitPurple = new(false)
     {
         category = TopHits,
-        displayName = "Top Path Upgrade 1 Hit Purple"
+        displayName = "Top Path Upgrade 1 Hit Purple",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool T1HitLead = new(false)
     {
         category = TopHits,
-        displayName = "Top Path Upgrade 1 Hit Lead"
+        displayName = "Top Path Upgrade 1 Hit Lead",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool T1HitFrozen = new(false)
     {
         category = TopHits,
-        displayName = "Top Path Upgrade 1 Hit Frozen"
+        displayName = "Top Path Upgrade 1 Hit Frozen",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool T2HitAll = new(false)
     {
         category = TopHits,
-        displayName = "Top Path Upgrade 2 Hit All"
+        displayName = "Top Path Upgrade 2 Hit All",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool T2HitPurple = new(false)
     {
         category = TopHits,
-        displayName = "Top Path Upgrade 2 Hit Purple"
+        displayName = "Top Path Upgrade 2 Hit Purple",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool T2HitLead = new(false)
     {
         category = TopHits,
-        displayName = "Top Path Upgrade 2 Hit Lead"
+        displayName = "Top Path Upgrade 2 Hit Lead",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool T2HitFrozen = new(false)
     {
         category = TopHits,
-        displayName = "Top Path Upgrade 2 Hit Frozen"
+        displayName = "Top Path Upgrade 2 Hit Frozen",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool T3HitAll = new(false)
     {
         category = TopHits,
-        displayName = "Top Path Upgrade 3 Hit All"
+        displayName = "Top Path Upgrade 3 Hit All",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool T3HitPurple = new(false)
     {
         category = TopHits,
-        displayName = "Top Path Upgrade 3 Hit Purple"
+        displayName = "Top Path Upgrade 3 Hit Purple",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool T3HitLead = new(false)
     {
         category = TopHits,
-        displayName = "Top Path Upgrade 3 Hit Lead"
+        displayName = "Top Path Upgrade 3 Hit Lead",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool T3HitFrozen = new(false)
     {
         category = TopHits,
-        displayName = "Top Path Upgrade 3 Hit Frozen"
+        displayName = "Top Path Upgrade 3 Hit Frozen",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool T4HitAll = new(false)
     {
         category = TopHits,
-        displayName = "Top Path Upgrade 4 Hit All"
+        displayName = "Top Path Upgrade 4 Hit All",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool T4HitPurple = new(false)
     {
         category = TopHits,
-        displayName = "Top Path Upgrade 4 Hit Purple"
+        displayName = "Top Path Upgrade 4 Hit Purple",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool T4HitLead = new(false)
     {
         category = TopHits,
-        displayName = "Top Path Upgrade 4 Hit Lead"
+        displayName = "Top Path Upgrade 4 Hit Lead",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool T4HitFrozen = new(false)
     {
         category = TopHits,
-        displayName = "Top Path Upgrade 4 Hit Frozen"
+        displayName = "Top Path Upgrade 4 Hit Frozen",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool T5HitAll = new(false)
     {
         category = TopHits,
-        displayName = "Top Path Upgrade 5 Hit All"
+        displayName = "Top Path Upgrade 5 Hit All",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool T5HitPurple = new(false)
     {
         category = TopHits,
-        displayName = "Top Path Upgrade 5 Hit Purple"
+        displayName = "Top Path Upgrade 5 Hit Purple",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool T5HitLead = new(false)
     {
         category = TopHits,
-        displayName = "Top Path Upgrade 5 Hit Lead"
+        displayName = "Top Path Upgrade 5 Hit Lead",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool T5HitFrozen = new(false)
     {
         category = TopHits,
-        displayName = "Top Path Upgrade 5 Hit Frozen"
+        displayName = "Top Path Upgrade 5 Hit Frozen",
+        requiresRestart = true
     };
     internal static readonly ModSettingCategory MiddleHits = new("Middle Path Hit Customization");
     internal static readonly ModSettingBool M1HitAll = new(false)
     {
         category = MiddleHits,
-        displayName = "Middle Path Upgrade 1 Hit All"
+        displayName = "Middle Path Upgrade 1 Hit All",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool M1HitPurple = new(false)
     {
         category = MiddleHits,
-        displayName = "Middle Path Upgrade 1 Hit Purple"
+        displayName = "Middle Path Upgrade 1 Hit Purple",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool M1HitLead = new(false)
     {
         category = MiddleHits,
-        displayName = "Middle Path Upgrade 1 Hit Lead"
+        displayName = "Middle Path Upgrade 1 Hit Lead",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool M1HitFrozen = new(false)
     {
         category = MiddleHits,
-        displayName = "Middle Path Upgrade 1 Hit Frozen"
+        displayName = "Middle Path Upgrade 1 Hit Frozen",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool M2HitAll = new(false)
     {
         category = MiddleHits,
-        displayName = "Middle Path Upgrade 2 Hit All"
+        displayName = "Middle Path Upgrade 2 Hit All",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool M2HitPurple = new(false)
     {
         category = MiddleHits,
-        displayName = "Middle Path Upgrade 2 Hit Purple"
+        displayName = "Middle Path Upgrade 2 Hit Purple",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool M2HitLead = new(false)
     {
         category = MiddleHits,
-        displayName = "Middle Path Upgrade 2 Hit Lead"
+        displayName = "Middle Path Upgrade 2 Hit Lead",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool M2HitFrozen = new(false)
     {
         category = MiddleHits,
-        displayName = "Middle Path Upgrade 2 Hit Frozen"
+        displayName = "Middle Path Upgrade 2 Hit Frozen",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool M3HitAll = new(false)
     {
         category = MiddleHits,
-        displayName = "Middle Path Upgrade 3 Hit All"
+        displayName = "Middle Path Upgrade 3 Hit All",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool M3HitPurple = new(false)
     {
         category = MiddleHits,
-        displayName = "Middle Path Upgrade 3 Hit Purple"
+        displayName = "Middle Path Upgrade 3 Hit Purple",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool M3HitLead = new(false)
     {
         category = MiddleHits,
-        displayName = "Middle Path Upgrade 3 Hit Lead"
+        displayName = "Middle Path Upgrade 3 Hit Lead",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool M3HitFrozen = new(false)
     {
         category = MiddleHits,
-        displayName = "Middle Path Upgrade 3 Hit Frozen"
+        displayName = "Middle Path Upgrade 3 Hit Frozen",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool M4HitAll = new(false)
     {
         category = MiddleHits,
-        displayName = "Middle Path Upgrade 4 Hit All"
+        displayName = "Middle Path Upgrade 4 Hit All",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool M4HitPurple = new(false)
     {
         category = MiddleHits,
-        displayName = "Middle Path Upgrade 4 Hit Purple"
+        displayName = "Middle Path Upgrade 4 Hit Purple",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool M4HitLead = new(false)
     {
         category = MiddleHits,
-        displayName = "Middle Path Upgrade 4 Hit Lead"
+        displayName = "Middle Path Upgrade 4 Hit Lead",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool M4HitFrozen = new(false)
     {
         category = MiddleHits,
-        displayName = "Middle Path Upgrade 4 Hit Frozen"
+        displayName = "Middle Path Upgrade 4 Hit Frozen",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool M5HitAll = new(false)
     {
         category = MiddleHits,
-        displayName = "Middle Path Upgrade 5 Hit All"
+        displayName = "Middle Path Upgrade 5 Hit All",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool M5HitPurple = new(false)
     {
         category = MiddleHits,
-        displayName = "Middle Path Upgrade 5 Hit Purple"
+        displayName = "Middle Path Upgrade 5 Hit Purple",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool M5HitLead = new(false)
     {
         category = MiddleHits,
-        displayName = "Middle Path Upgrade 5 Hit Lead"
+        displayName = "Middle Path Upgrade 5 Hit Lead",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool M5HitFrozen = new(false)
     {
         category = MiddleHits,
-        displayName = "Middle Path Upgrade 5 Hit Frozen"
+        displayName = "Middle Path Upgrade 5 Hit Frozen",
+        requiresRestart = true
     };
     internal static readonly ModSettingCategory BottomHits = new("Bottom Path Hit Customization");
     internal static readonly ModSettingBool B1HitAll = new(false)
     {
         category = BottomHits,
-        displayName = "Bottom Path Upgrade 1 Hit All"
+        displayName = "Bottom Path Upgrade 1 Hit All",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool B1HitPurple = new(false)
     {
         category = BottomHits,
-        displayName = "Bottom Path Upgrade 1 Hit Purple"
+        displayName = "Bottom Path Upgrade 1 Hit Purple",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool B1HitLead = new(false)
     {
         category = BottomHits,
-        displayName = "Bottom Path Upgrade 1 Hit Lead"
+        displayName = "Bottom Path Upgrade 1 Hit Lead",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool B1HitFrozen = new(false)
     {
         category = BottomHits,
-        displayName = "Bottom Path Upgrade 1 Hit Frozen"
+        displayName = "Bottom Path Upgrade 1 Hit Frozen",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool B2HitAll = new(false)
     {
         category = BottomHits,
-        displayName = "Bottom Path Upgrade 2 Hit All"
+        displayName = "Bottom Path Upgrade 2 Hit All",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool B2HitPurple = new(false)
     {
         category = BottomHits,
-        displayName = "Bottom Path Upgrade 2 Hit Purple"
+        displayName = "Bottom Path Upgrade 2 Hit Purple",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool B2HitLead = new(false)
     {
         category = BottomHits,
-        displayName = "Bottom Path Upgrade 2 Hit Lead"
+        displayName = "Bottom Path Upgrade 2 Hit Lead",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool B2HitFrozen = new(false)
     {
         category = BottomHits,
-        displayName = "Bottom Path Upgrade 2 Hit Frozen"
+        displayName = "Bottom Path Upgrade 2 Hit Frozen",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool B3HitAll = new(false)
     {
         category = BottomHits,
-        displayName = "Bottom Path Upgrade 3 Hit All"
+        displayName = "Bottom Path Upgrade 3 Hit All",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool B3HitPurple = new(false)
     {
         category = BottomHits,
-        displayName = "Bottom Path Upgrade 3 Hit Purple"
+        displayName = "Bottom Path Upgrade 3 Hit Purple",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool B3HitLead = new(false)
     {
         category = BottomHits,
-        displayName = "Bottom Path Upgrade 3 Hit Lead"
+        displayName = "Bottom Path Upgrade 3 Hit Lead",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool B3HitFrozen = new(false)
     {
         category = BottomHits,
-        displayName = "Bottom Path Upgrade 3 Hit Frozen"
+        displayName = "Bottom Path Upgrade 3 Hit Frozen",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool B4HitAll = new(false)
     {
         category = BottomHits,
-        displayName = "Bottom Path Upgrade 4 Hit All"
+        displayName = "Bottom Path Upgrade 4 Hit All",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool B4HitPurple = new(false)
     {
         category = BottomHits,
-        displayName = "Bottom Path Upgrade 4 Hit Purple"
+        displayName = "Bottom Path Upgrade 4 Hit Purple",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool B4HitLead = new(false)
     {
         category = BottomHits,
-        displayName = "Bottom Path Upgrade 4 Hit Lead"
+        displayName = "Bottom Path Upgrade 4 Hit Lead",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool B4HitFrozen = new(false)
     {
         category = BottomHits,
-        displayName = "Bottom Path Upgrade 4 Hit Frozen"
+        displayName = "Bottom Path Upgrade 4 Hit Frozen",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool B5HitAll = new(false)
     {
         category = BottomHits,
-        displayName = "Bottom Path Upgrade 5 Hit All"
+        displayName = "Bottom Path Upgrade 5 Hit All",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool B5HitPurple = new(false)
     {
         category = BottomHits,
-        displayName = "Bottom Path Upgrade 5 Hit Purple"
+        displayName = "Bottom Path Upgrade 5 Hit Purple",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool B5HitLead = new(false)
     {
         category = BottomHits,
-        displayName = "Bottom Path Upgrade 5 Hit Lead"
+        displayName = "Bottom Path Upgrade 5 Hit Lead",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool B5HitFrozen = new(false)
     {
         category = BottomHits,
-        displayName = "Bottom Path Upgrade 5 Hit Frozen"
+        displayName = "Bottom Path Upgrade 5 Hit Frozen",
+        requiresRestart = true
     };
     internal static readonly ModSettingCategory UpgradeCamoOptions = new("Upgrade Camo Options");
     internal static readonly ModSettingBool T1Camo = new(false)
     {
         category = UpgradeCamoOptions,
-        displayName = "Top Path Upgrade 1 Camo"
+        displayName = "Top Path Upgrade 1 Camo",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool T2Camo = new(false)
     {
         category = UpgradeCamoOptions,
-        displayName = "Top Path Upgrade 2 Camo"
+        displayName = "Top Path Upgrade 2 Camo",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool T3Camo = new(false)
     {
         category = UpgradeCamoOptions,
-        displayName = "Top Path Upgrade 3 Camo"
+        displayName = "Top Path Upgrade 3 Camo",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool T4Camo = new(false)
     {
         category = UpgradeCamoOptions,
-        displayName = "Top Path Upgrade 4 Camo"
+        displayName = "Top Path Upgrade 4 Camo",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool T5Camo = new(false)
     {
         category = UpgradeCamoOptions,
-        displayName = "Top Path Upgrade 5 Camo"
+        displayName = "Top Path Upgrade 5 Camo",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool M1Camo = new(false)
     {
         category = UpgradeCamoOptions,
-        displayName = "Middle Path Upgrade 1 Camo"
+        displayName = "Middle Path Upgrade 1 Camo",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool M2Camo = new(false)
     {
         category = UpgradeCamoOptions,
-        displayName = "Middle Path Upgrade 2 Camo"
+        displayName = "Middle Path Upgrade 2 Camo",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool M3Camo = new(false)
     {
         category = UpgradeCamoOptions,
-        displayName = "Middle Path Upgrade 3 Camo"
+        displayName = "Middle Path Upgrade 3 Camo",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool M4Camo = new(false)
     {
         category = UpgradeCamoOptions,
-        displayName = "Middle Path Upgrade 4 Camo"
+        displayName = "Middle Path Upgrade 4 Camo",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool M5Camo = new(false)
     {
         category = UpgradeCamoOptions,
-        displayName = "Middle Path Upgrade 5 Camo"
+        displayName = "Middle Path Upgrade 5 Camo",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool B1Camo = new(false)
     {
         category = UpgradeCamoOptions,
-        displayName = "Bottom Path Upgrade 1 Camo"
+        displayName = "Bottom Path Upgrade 1 Camo",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool B2Camo = new(false)
     {
         category = UpgradeCamoOptions,
-        displayName = "Bottom Path Upgrade 2 Camo"
+        displayName = "Bottom Path Upgrade 2 Camo",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool B3Camo = new(false)
     {
         category = UpgradeCamoOptions,
-        displayName = "Bottom Path Upgrade 3 Camo"
+        displayName = "Bottom Path Upgrade 3 Camo",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool B4Camo = new(false)
     {
         category = UpgradeCamoOptions,
-        displayName = "Bottom Path Upgrade 4 Camo"
+        displayName = "Bottom Path Upgrade 4 Camo",
+        requiresRestart = true
     };
     internal static readonly ModSettingBool B5Camo = new(false)
     {
         category = UpgradeCamoOptions,
-        displayName = "Bottom Path Upgrade 5 Camo"
+        displayName = "Bottom Path Upgrade 5 Camo",
+        requiresRestart = true
+    };
+    internal static readonly ModSettingCategory MultiShot = new("Multi Shot Config");
+    internal static readonly ModSettingInt MultishotNumber = new(1)
+    {
+        category = MultiShot,
+        displayName = "Number of Darts",
+        description = "The Number of Darts Shot in The Multishot, Default 1",
+        requiresRestart = true
+    };
+    internal static readonly ModSettingInt MultiShotOffset = new(0)
+    {
+        category = MultiShot,
+        displayName = "Multishot Offset",
+        description = "The Time Offset of the Multishot, Default 0",
+        requiresRestart = true
+    };
+    internal static readonly ModSettingInt MultiShotRotation = new(0)
+    {
+        category = MultiShot,
+        displayName = "Multishot Rotation",
+        description = "The Rotation/Spread of the Multishot, Default 0",
+        requiresRestart = true
     };
 }
