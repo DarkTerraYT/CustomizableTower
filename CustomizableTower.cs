@@ -1202,4 +1202,110 @@ public class CustomizableTower : BloonsTD6Mod
         description = "The Rotation/Spread of the Multishot, Default 0",
         requiresRestart = true
     };
+    internal static readonly ModSettingCategory TopPathMultiShot = new("Top Path Multishot");
+    internal static readonly ModSettingInt T1MultiShotNumber = new(0)
+    {
+        category = TopPathMultiShot,
+        displayName = "Top Path Upgrade 1 Number of Darts",
+        description = "How Many More Darts the 1-0-0 Plasma Monkey shoots, Default 0",
+        requiresRestart = true
+    };
+    internal static readonly ModSettingInt T1MultiShotOffset = new(0)
+    {
+        category = TopPathMultiShot,
+        displayName = "Top Path Upgrade 1 Multishot Offset",
+        description = "The Offset For The Multishot, Default 0",
+        requiresRestart = true
+    };
+    internal static readonly ModSettingInt T1MultiShotRotation = new(0)
+    {
+        category = TopPathMultiShot,
+        displayName = "Top Path Upgrade 1 Multishot Offset",
+        description = "The Rotation/Spread For The Multishot, Default 0",
+        requiresRestart = true
+    };
+    internal static readonly ModSettingInt T2MultiShotNumber = new(0)
+    {
+        category = TopPathMultiShot,
+        displayName = "Top Path Upgrade 2 Number of Darts",
+        description = "How Many More Darts the 2-0-0 Plasma Monkey shoots, Default 0",
+        requiresRestart = true
+    };
+    internal static readonly ModSettingInt T2MultiShotOffset = new(0)
+    {
+        category = TopPathMultiShot,
+        displayName = "Top Path Upgrade 2 Multishot Offset",
+        description = "The Offset For The Multishot, Default 0",
+        requiresRestart = true
+    };
+    internal static readonly ModSettingInt T2MultiShotRotation = new(0)
+    {
+        category = TopPathMultiShot,
+        displayName = "Top Path Upgrade 2 Multishot Offset",
+        description = "The Rotation/Spread For The Multishot, Default 0",
+        requiresRestart = true
+    };
+    internal static readonly ModSettingInt T3MultiShotNumber = new(0)
+    {
+        category = TopPathMultiShot,
+        displayName = "Top Path Upgrade 3 Number of Darts",
+        description = "How Many More Darts the 3-0-0 Plasma Monkey shoots, Default 0",
+        requiresRestart = true
+    };
+    internal static readonly ModSettingInt T3MultiShotOffset = new(0)
+    {
+        category = TopPathMultiShot,
+        displayName = "Top Path Upgrade 3 Multishot Offset",
+        description = "The Offset For The Multishot, Default 0",
+        requiresRestart = true
+    };
+    internal static readonly ModSettingInt T3MultiShotRotation = new(0)
+    {
+        category = TopPathMultiShot,
+        displayName = "Top Path Upgrade 3 Multishot Offset",
+        description = "The Rotation/Spread For The Multishot, Default 0",
+        requiresRestart = true
+    };
+    internal static readonly ModSettingInt T4MultiShotNumber = new(0)
+    {
+        category = TopPathMultiShot,
+        displayName = "Top Path Upgrade 4 Number of Darts",
+        description = "How Many More Darts the 4-0-0 Plasma Monkey shoots, Default 0",
+        requiresRestart = true
+    };
+    internal static readonly ModSettingInt T4MultiShotOffset = new(0)
+    {
+        category = TopPathMultiShot,
+        displayName = "Top Path Upgrade 4 Multishot Offset",
+        description = "The Offset For The Multishot, Default 0",
+        requiresRestart = true
+    };
+    internal static readonly ModSettingInt T4MultiShotRotation = new(0)
+    {
+        category = TopPathMultiShot,
+        displayName = "Top Path Upgrade 4 Multishot Offset",
+        description = "The Rotation/Spread For The Multishot, Default 0",
+        requiresRestart = true
+    };
+    internal static readonly ModSettingInt T5MultiShotNumber = new(0)
+    {
+        category = TopPathMultiShot,
+        displayName = "Top Path Upgrade 5 Number of Darts",
+        description = "How Many More Darts the 5-0-0 Plasma Monkey shoots, Default 0",
+        requiresRestart = true
+    };
+    internal static readonly ModSettingInt T5MultiShotOffset = new(0)
+    {
+        category = TopPathMultiShot,
+        displayName = "Top Path Upgrade 5 Multishot Offset",
+        description = "The Offset For The Multishot, Default 0",
+        requiresRestart = true
+    };
+    internal static readonly ModSettingInt T5MultiShotRotation = new(0)
+    {
+        category = TopPathMultiShot,
+        displayName = "Top Path Upgrade 5 Multishot Offset",
+        description = "The Rotation/Spread For The Multishot, Default 0",
+        requiresRestart = true
+    };
 }
