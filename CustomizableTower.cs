@@ -1220,7 +1220,7 @@ public class CustomizableTower : BloonsTD6Mod
     internal static readonly ModSettingInt T1MultiShotRotation = new(0)
     {
         category = TopPathMultiShot,
-        displayName = "Top Path Upgrade 1 Multishot Offset",
+        displayName = "Top Path Upgrade 1 Multishot Rotation",
         description = "The Rotation/Spread For The Multishot, Default 0",
         requiresRestart = true
     };
@@ -1241,7 +1241,7 @@ public class CustomizableTower : BloonsTD6Mod
     internal static readonly ModSettingInt T2MultiShotRotation = new(0)
     {
         category = TopPathMultiShot,
-        displayName = "Top Path Upgrade 2 Multishot Offset",
+        displayName = "Top Path Upgrade 2 Multishot Rotation",
         description = "The Rotation/Spread For The Multishot, Default 0",
         requiresRestart = true
     };
@@ -1262,7 +1262,7 @@ public class CustomizableTower : BloonsTD6Mod
     internal static readonly ModSettingInt T3MultiShotRotation = new(0)
     {
         category = TopPathMultiShot,
-        displayName = "Top Path Upgrade 3 Multishot Offset",
+        displayName = "Top Path Upgrade 3 Multishot Rotation",
         description = "The Rotation/Spread For The Multishot, Default 0",
         requiresRestart = true
     };
@@ -1283,7 +1283,7 @@ public class CustomizableTower : BloonsTD6Mod
     internal static readonly ModSettingInt T4MultiShotRotation = new(0)
     {
         category = TopPathMultiShot,
-        displayName = "Top Path Upgrade 4 Multishot Offset",
+        displayName = "Top Path Upgrade 4 Multishot Rotation",
         description = "The Rotation/Spread For The Multishot, Default 0",
         requiresRestart = true
     };
@@ -1304,7 +1304,7 @@ public class CustomizableTower : BloonsTD6Mod
     internal static readonly ModSettingInt T5MultiShotRotation = new(0)
     {
         category = TopPathMultiShot,
-        displayName = "Top Path Upgrade 5 Multishot Offset",
+        displayName = "Top Path Upgrade 5 Multishot Rotation",
         description = "The Rotation/Spread For The Multishot, Default 0",
         requiresRestart = true
     };
@@ -1326,7 +1326,7 @@ public class CustomizableTower : BloonsTD6Mod
     internal static readonly ModSettingInt M1MultiShotRotation = new(0)
     {
         category = MiddlePathMultiShot,
-        displayName = "Middle Path Upgrade 1 Multishot Offset",
+        displayName = "Middle Path Upgrade 1 Multishot Rotation",
         description = "The Rotation/Spread For The Multishot, Default 0",
         requiresRestart = true
     };
@@ -1347,7 +1347,7 @@ public class CustomizableTower : BloonsTD6Mod
     internal static readonly ModSettingInt M2MultiShotRotation = new(0)
     {
         category = MiddlePathMultiShot,
-        displayName = "Middle Path Upgrade 2 Multishot Offset",
+        displayName = "Middle Path Upgrade 2 Multishot Rotation",
         description = "The Rotation/Spread For The Multishot, Default 0",
         requiresRestart = true
     };
@@ -1368,7 +1368,7 @@ public class CustomizableTower : BloonsTD6Mod
     internal static readonly ModSettingInt M3MultiShotRotation = new(0)
     {
         category = MiddlePathMultiShot,
-        displayName = "Middle Path Upgrade 3 Multishot Offset",
+        displayName = "Middle Path Upgrade 3 Multishot Rotation",
         description = "The Rotation/Spread For The Multishot, Default 0",
         requiresRestart = true
     };
@@ -1389,7 +1389,7 @@ public class CustomizableTower : BloonsTD6Mod
     internal static readonly ModSettingInt M4MultiShotRotation = new(0)
     {
         category = MiddlePathMultiShot,
-        displayName = "Middle Path Upgrade 4 Multishot Offset",
+        displayName = "Middle Path Upgrade 4 Multishot Rotation",
         description = "The Rotation/Spread For The Multishot, Default 0",
         requiresRestart = true
     };
@@ -1410,7 +1410,7 @@ public class CustomizableTower : BloonsTD6Mod
     internal static readonly ModSettingInt M5MultiShotRotation = new(0)
     {
         category = MiddlePathMultiShot,
-        displayName = "Middle Path Upgrade 5 Multishot Offset",
+        displayName = "Middle Path Upgrade 5 Multishot Rotation",
         description = "The Rotation/Spread For The Multishot, Default 0",
         requiresRestart = true
     };
@@ -1432,7 +1432,7 @@ public class CustomizableTower : BloonsTD6Mod
     internal static readonly ModSettingInt B1MultiShotRotation = new(0)
     {
         category = BottomPathMultiShot,
-        displayName = "Bottom Path Upgrade 1 Multishot Offset",
+        displayName = "Bottom Path Upgrade 1 Multishot Rotation",
         description = "The Rotation/Spread For The Multishot, Default 0",
         requiresRestart = true
     };
@@ -1453,7 +1453,7 @@ public class CustomizableTower : BloonsTD6Mod
     internal static readonly ModSettingInt B2MultiShotRotation = new(0)
     {
         category = BottomPathMultiShot,
-        displayName = "Bottom Path Upgrade 2 Multishot Offset",
+        displayName = "Bottom Path Upgrade 2 Multishot Rotation",
         description = "The Rotation/Spread For The Multishot, Default 0",
         requiresRestart = true
     };
@@ -1474,7 +1474,7 @@ public class CustomizableTower : BloonsTD6Mod
     internal static readonly ModSettingInt B3MultiShotRotation = new(0)
     {
         category = BottomPathMultiShot,
-        displayName = "Bottom Path Upgrade 3 Multishot Offset",
+        displayName = "Bottom Path Upgrade 3 Multishot Rotation",
         description = "The Rotation/Spread For The Multishot, Default 0",
         requiresRestart = true
     };
@@ -1495,7 +1495,7 @@ public class CustomizableTower : BloonsTD6Mod
     internal static readonly ModSettingInt B4MultiShotRotation = new(0)
     {
         category = BottomPathMultiShot,
-        displayName = "Bottom Path Upgrade 4 Multishot Offset",
+        displayName = "Bottom Path Upgrade 4 Multishot Rotation",
         description = "The Rotation/Spread For The Multishot, Default 0",
         requiresRestart = true
     };
@@ -1516,7 +1516,7 @@ public class CustomizableTower : BloonsTD6Mod
     internal static readonly ModSettingInt B5MultiShotRotation = new(0)
     {
         category = BottomPathMultiShot,
-        displayName = "Bottom Path Upgrade 5 Multishot Offset",
+        displayName = "Bottom Path Upgrade 5 Multishot Rotation",
         description = "The Rotation/Spread For The Multishot, Default 0",
         requiresRestart = true
     };
