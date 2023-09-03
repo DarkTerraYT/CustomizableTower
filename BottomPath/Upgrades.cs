@@ -72,7 +72,7 @@ namespace BottomPath
             {
                 towerModel.GetDescendants<FilterInvisibleModel>().ForEach(model => model.isActive = false);
             }
-            towerModel.GetWeapon().emission = new ArcEmissionModel("Emission", B1MultiShotNumber, B1MultiShotOffset, B1MultiShotRotation, null, false, false);
+            towerModel.GetWeapon().emission = new ArcEmissionModel("Emission", B1MultiShotNumber + MultishotNumber, B1MultiShotOffset, B1MultiShotRotation, null, false, false);
         }
     }
     internal class BUpgrade2 : ModUpgrade<CustomizableTowerClass>
@@ -137,7 +137,7 @@ namespace BottomPath
             {
                 towerModel.GetDescendants<FilterInvisibleModel>().ForEach(model => model.isActive = false);
             }
-            towerModel.GetWeapon().emission = new ArcEmissionModel("Emission", B2MultiShotNumber, B2MultiShotOffset, B2MultiShotRotation, null, false, false);
+            towerModel.GetWeapon().emission = new ArcEmissionModel("Emission", B2MultiShotNumber + MultishotNumber, B2MultiShotOffset, B2MultiShotRotation, null, false, false);
         }
     }
     internal class BUpgrade3 : ModUpgrade<CustomizableTowerClass>
@@ -203,7 +203,7 @@ namespace BottomPath
             {
                 towerModel.GetDescendants<FilterInvisibleModel>().ForEach(model => model.isActive = false);
             }
-            towerModel.GetWeapon().emission = new ArcEmissionModel("Emission", B3MultiShotNumber, B3MultiShotOffset, B3MultiShotRotation, null, false, false);
+            towerModel.GetWeapon().emission = new ArcEmissionModel("Emission", B3MultiShotNumber + MultishotNumber, B3MultiShotOffset, B3MultiShotRotation, null, false, false);
         }
     }
     internal class BUpgrade4 : ModUpgrade<CustomizableTowerClass>
@@ -268,7 +268,7 @@ namespace BottomPath
             {
                 towerModel.GetDescendants<FilterInvisibleModel>().ForEach(model => model.isActive = false);
             }
-            towerModel.GetWeapon().emission = new ArcEmissionModel("Emission", B4MultiShotNumber, B4MultiShotOffset, B4MultiShotRotation, null, false, false);
+            towerModel.GetWeapon().emission = new ArcEmissionModel("Emission", B4MultiShotNumber + MultishotNumber, B4MultiShotOffset, B4MultiShotRotation, null, false, false);
         }
     }
     internal class BUpgrade5 : ModUpgrade<CustomizableTowerClass>
@@ -333,7 +333,7 @@ namespace BottomPath
             {
                 towerModel.GetDescendants<FilterInvisibleModel>().ForEach(model => model.isActive = false);
             }
-            towerModel.GetWeapon().emission = new ArcEmissionModel("Emission", B5MultiShotNumber, B5MultiShotOffset, B5MultiShotRotation, null, false, false);
+            towerModel.GetWeapon().emission = new ArcEmissionModel("Emission", B5MultiShotNumber + MultishotNumber, B5MultiShotOffset, B5MultiShotRotation, null, false, false);
         }
     }
 }

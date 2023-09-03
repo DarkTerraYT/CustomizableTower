@@ -81,7 +81,7 @@ namespace CustomizableTower
             {
                 towerModel.GetDescendants<FilterInvisibleModel>().ForEach(model => model.isActive = true);
             }
-            towerModel.GetWeapon().emission = new ArcEmissionModel("Emission", CustomizableTower.MultishotNumber, CustomizableTower.MultiShotOffset, CustomizableTower.MultiShotRotation, null, false, false);
+            towerModel.GetWeapon().emission = new ArcEmissionModel("Emission", CustomizableTower.MultishotNumber + CustomizableTower.MultishotNumber, CustomizableTower.MultiShotOffset, CustomizableTower.MultiShotRotation, null, false, false);
         }
         public override bool IsValidCrosspath(int[] tiers) =>
             ModHelper.HasMod("UltimateCrosspathing") ? true : base.IsValidCrosspath(tiers);
