@@ -71,10 +71,6 @@ namespace TopPath
             {
                 towerModel.GetDescendants<FilterInvisibleModel>().ForEach(model => model.isActive = false);
             }
-            if (T1MultiShotNumber < 1)
-            {
-                T1MultiShotNumber.SetValue(1);
-            }
             towerModel.GetWeapon().emission = new ArcEmissionModel("Emission", T1MultiShotNumber, T1MultiShotOffset, T1MultiShotRotation, null, false, false);
         }
     }
@@ -139,10 +135,6 @@ namespace TopPath
             if (T2Camo)
             {
                 towerModel.GetDescendants<FilterInvisibleModel>().ForEach(model => model.isActive = false);
-            }
-            if (T2MultiShotNumber < 1)
-            {
-                T2MultiShotNumber.SetValue(1);
             }
             towerModel.GetWeapon().emission = new ArcEmissionModel("Emission", T2MultiShotNumber, T2MultiShotOffset, T2MultiShotRotation, null, false, false);
         }
@@ -209,10 +201,6 @@ namespace TopPath
             {
                 towerModel.GetDescendants<FilterInvisibleModel>().ForEach(model => model.isActive = false);
             }
-            if (T3MultiShotNumber < 1)
-            {
-                T3MultiShotNumber.SetValue(1);
-            }
             towerModel.GetWeapon().emission = new ArcEmissionModel("Emission", T3MultiShotNumber, T3MultiShotOffset, T3MultiShotRotation, null, false, false);
         }
     }
@@ -278,10 +266,6 @@ namespace TopPath
             {
                 towerModel.GetDescendants<FilterInvisibleModel>().ForEach(model => model.isActive = false);
             }
-            if (T4MultiShotNumber < 1)
-            {
-                T4MultiShotNumber.SetValue(1);
-            }
             towerModel.GetWeapon().emission = new ArcEmissionModel("Emission", T4MultiShotNumber, T4MultiShotOffset, T4MultiShotRotation, null, false, false);
         }
     }
@@ -346,10 +330,6 @@ namespace TopPath
             if (T5Camo)
             {
                 towerModel.GetDescendants<FilterInvisibleModel>().ForEach(model => model.isActive = false);
-            }
-            if (T5MultiShotNumber < 1)
-            {
-                T5MultiShotNumber.SetValue(1);
             }
             towerModel.GetWeapon().emission = new ArcEmissionModel("Emission", T5MultiShotNumber, T5MultiShotOffset, T5MultiShotRotation, null, false, false);
         }
