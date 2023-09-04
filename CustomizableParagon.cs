@@ -8,9 +8,12 @@ namespace CustomizableTower
     internal class CustomizableParagon : ModParagonUpgrade<CustomizableTowerClass>
     {
         public override int Cost => ParagonCost;
-
+        public override string DisplayName => ParagonName;
+        public override string Icon => "CustomizableParagon-Icon";
+        public override string Portrait => "CustomizableParagon-Icon";
         public override void ApplyUpgrade(TowerModel towerModel)
         {
+            towerModel.ApplyDisplay<CustomizableParagonDisplay>();
             towerModel.range += ParagonRange;
             towerModel.GetAttackModel().range += ParagonRange;
             towerModel.GetWeapon().rate *= ParagonSpeedModifier;

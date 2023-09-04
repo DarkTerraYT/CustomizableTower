@@ -17,4 +17,8 @@ namespace CustomizableTower
             Set2DTexture(node, Name);
         }
     }
+    internal class CustomizableParagonDisplay : ModDisplay2D
+    {
+        protected override string TextureName => "CustomizedTowerParagonDisplay";
+    }
 }
