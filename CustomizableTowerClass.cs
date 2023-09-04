@@ -21,6 +21,7 @@ namespace CustomizableTower
         public override int MiddlePathUpgrades => CustomizableTower.MiddlePathUpgrades;
 
         public override int BottomPathUpgrades => CustomizableTower.BottomPathUpgrades;
+        public override ParagonMode ParagonMode => ParagonMode.Base555;
         public override string Icon => "CustomizedTower-Portrait";
         public override string Portrait => "CustomizedTower-Portrait";
         public override string DisplayName => "Customizable Tower";
