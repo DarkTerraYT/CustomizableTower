@@ -9,6 +9,7 @@ namespace CustomizableTower
     {
         public override int Cost => ParagonCost;
         public override string DisplayName => ParagonName;
+        public override string Description => "This is a paragon";
         public override string Icon => "CustomizableParagon-Icon";
         public override string Portrait => "CustomizableParagon-Icon";
         public override void ApplyUpgrade(TowerModel towerModel)
