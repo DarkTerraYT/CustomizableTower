@@ -1520,4 +1520,29 @@ public class CustomizableTower : BloonsTD6Mod
         description = "The Rotation/Spread For The Multishot, Default 0",
         requiresRestart = true
     };
+    internal static ModSettingCategory ParagonSettings = new("Paragon Customization");
+    internal static ModSettingInt ParagonCost = new(0) 
+    {
+        category = ParagonSettings
+    };
+    internal static ModSettingString ParagonName = new("Paragon")
+    {
+        category = ParagonSettings
+    };
+    internal static ModSettingInt ParagonDamageBuff = new(1) 
+    { 
+        category = ParagonSettings 
+    };
+    internal static ModSettingDouble ParagonSpeedModifier = new(1)
+    {
+        category = ParagonSettings
+    };
+    internal static ModSettingDouble ParagonRange = new(1)
+    {
+        category = ParagonSettings
+    };
+    internal static ModSettingInt ParagonPierce = new(1)
+    {
+        category = ParagonSettings
+    };
 }
