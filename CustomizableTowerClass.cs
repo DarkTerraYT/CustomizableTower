@@ -131,7 +131,8 @@ namespace CustomizableTower
                 {
                     DamageModel.immuneBloonProperties = Il2Cpp.BloonProperties.None;
                 }
-                towerModel.GetWeapon().emission = new ArcEmissionModel("Emission", CustomizableTower.MultishotNumber + CustomizableTower.MultishotNumber, CustomizableTower.MultiShotOffset, CustomizableTower.MultiShotRotation, null, false, false);
+                CustomizableTower.MultiShotTotal += CustomizableTower.MultishotNumber;
+                towerModel.GetWeapon().emission = new ArcEmissionModel("Emission", CustomizableTower.MultiShotTotal, CustomizableTower.MultiShotOffset, CustomizableTower.MultiShotRotation, null, false, false);
             }
             if(CustomizableTower.SeeCamo)
             {

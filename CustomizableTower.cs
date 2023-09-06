@@ -18,6 +18,8 @@ public class CustomizableTower : BloonsTD6Mod
 {
     internal static readonly ModSettingCategory BaseTower = new("Base Tower Customization");
 
+    internal static int MultiShotTotal = 0;
+
     internal static readonly ModSettingInt Cost = new(0)
     {
         category = BaseTower,
