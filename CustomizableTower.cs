@@ -37,7 +37,7 @@ public class CustomizableTower : BloonsTD6Mod
     internal static readonly ModSettingInt Damage = new(1)
     {
         category = BaseTower,
-        min = 1,
+        
         max = 999999999,
         requiresRestart = true
     };
@@ -1226,7 +1226,7 @@ public class CustomizableTower : BloonsTD6Mod
     {
         category = MultiShot,
         displayName = "Number of Darts",
-        description = "The Number of Darts Shot in The Multishot, Default 1", min = 1,
+        description = "The Number of Darts Shot in The Multishot, Default 1", 
         requiresRestart = true
     };
     internal static readonly ModSettingInt MultiShotOffset = new(0)
@@ -1248,7 +1248,7 @@ public class CustomizableTower : BloonsTD6Mod
     {
         category = TopPathMultiShot,
         displayName = "Top Path Upgrade 1 Number of Darts",
-        description = "How Many More Darts the 1-0-0 Tower Shoots, Default 1", min = 1,
+        description = "How Many More Darts the 1-0-0 Tower Shoots, Default 1", 
         requiresRestart = true
     };
     internal static readonly ModSettingInt T1MultiShotOffset = new(0)
@@ -1269,7 +1269,7 @@ public class CustomizableTower : BloonsTD6Mod
     {
         category = TopPathMultiShot,
         displayName = "Top Path Upgrade 2 Number of Darts",
-        description = "How Many More Darts the 2-0-0 Tower Shoots, Default 1", min = 1,
+        description = "How Many More Darts the 2-0-0 Tower Shoots, Default 1", 
         requiresRestart = true
     };
     internal static readonly ModSettingInt T2MultiShotOffset = new(0)
@@ -1290,7 +1290,7 @@ public class CustomizableTower : BloonsTD6Mod
     {
         category = TopPathMultiShot,
         displayName = "Top Path Upgrade 3 Number of Darts",
-        description = "How Many More Darts the 3-0-0 Tower Shoots, Default 1", min = 1,
+        description = "How Many More Darts the 3-0-0 Tower Shoots, Default 1", 
         requiresRestart = true
     };
     internal static readonly ModSettingInt T3MultiShotOffset = new(0)
@@ -1311,7 +1311,7 @@ public class CustomizableTower : BloonsTD6Mod
     {
         category = TopPathMultiShot,
         displayName = "Top Path Upgrade 4 Number of Darts",
-        description = "How Many More Darts the 4-0-0 Tower Shoots, Default 1", min = 1,
+        description = "How Many More Darts the 4-0-0 Tower Shoots, Default 1", 
         requiresRestart = true
     };
     internal static readonly ModSettingInt T4MultiShotOffset = new(0)
@@ -1332,7 +1332,7 @@ public class CustomizableTower : BloonsTD6Mod
     {
         category = TopPathMultiShot,
         displayName = "Top Path Upgrade 5 Number of Darts",
-        description = "How Many More Darts the 5-0-0 Tower Shoots, Default 1", min = 1,
+        description = "How Many More Darts the 5-0-0 Tower Shoots, Default 1", 
         requiresRestart = true
     };
     internal static readonly ModSettingInt T5MultiShotOffset = new(0)
@@ -1354,7 +1354,7 @@ public class CustomizableTower : BloonsTD6Mod
     {
         category = MiddlePathMultiShot,
         displayName = "Middle Path Upgrade 1 Number of Darts",
-        description = "How Many More Darts the 0-1-0 Tower Shoots, Default 1", min = 1,
+        description = "How Many More Darts the 0-1-0 Tower Shoots, Default 1", 
         requiresRestart = true
     };
     internal static readonly ModSettingInt M1MultiShotOffset = new(0)
@@ -1375,7 +1375,7 @@ public class CustomizableTower : BloonsTD6Mod
     {
         category = MiddlePathMultiShot,
         displayName = "Middle Path Upgrade 2 Number of Darts",
-        description = "How Many More Darts the 0-2-0 Tower Shoots, Default 1", min = 1,
+        description = "How Many More Darts the 0-2-0 Tower Shoots, Default 1", 
         requiresRestart = true
     };
     internal static readonly ModSettingInt M2MultiShotOffset = new(0)
@@ -1396,7 +1396,7 @@ public class CustomizableTower : BloonsTD6Mod
     {
         category = MiddlePathMultiShot,
         displayName = "Middle Path Upgrade 3 Number of Darts",
-        description = "How Many More Darts the 0-3-0 Tower Shoots, Default 1", min = 1,
+        description = "How Many More Darts the 0-3-0 Tower Shoots, Default 1", 
         requiresRestart = true
     };
     internal static readonly ModSettingInt M3MultiShotOffset = new(0)
@@ -1417,7 +1417,7 @@ public class CustomizableTower : BloonsTD6Mod
     {
         category = MiddlePathMultiShot,
         displayName = "Middle Path Upgrade 4 Number of Darts",
-        description = "How Many More Darts the 0-5-0 Tower Shoots, Default 1", min = 1,
+        description = "How Many More Darts the 0-5-0 Tower Shoots, Default 1", 
         requiresRestart = true
     };
     internal static readonly ModSettingInt M4MultiShotOffset = new(0)
@@ -1438,7 +1438,7 @@ public class CustomizableTower : BloonsTD6Mod
     {
         category = MiddlePathMultiShot,
         displayName = "Middle Path Upgrade 5 Number of Darts",
-        description = "How Many More Darts the 0-5-0 Tower Shoots, Default 1", min = 1,
+        description = "How Many More Darts the 0-5-0 Tower Shoots, Default 1", 
         requiresRestart = true
     };
     internal static readonly ModSettingInt M5MultiShotOffset = new(0)
@@ -1460,7 +1460,7 @@ public class CustomizableTower : BloonsTD6Mod
     {
         category = BottomPathMultiShot,
         displayName = "Bottom Path Upgrade 1 Number of Darts",
-        description = "How Many More Darts the 0-0-1 Tower Shoots, Default 1", min = 1,
+        description = "How Many More Darts the 0-0-1 Tower Shoots, Default 1", 
         requiresRestart = true
     };
     internal static readonly ModSettingInt B1MultiShotOffset = new(0)
@@ -1481,7 +1481,7 @@ public class CustomizableTower : BloonsTD6Mod
     {
         category = BottomPathMultiShot,
         displayName = "Bottom Path Upgrade 2 Number of Darts",
-        description = "How Many More Darts the 0-0-2 Tower Shoots, Default 1", min = 1,
+        description = "How Many More Darts the 0-0-2 Tower Shoots, Default 1", 
         requiresRestart = true
     };
     internal static readonly ModSettingInt B2MultiShotOffset = new(0)
@@ -1502,7 +1502,7 @@ public class CustomizableTower : BloonsTD6Mod
     {
         category = BottomPathMultiShot,
         displayName = "Bottom Path Upgrade 3 Number of Darts",
-        description = "How Many More Darts the 0-0-3 Tower Shoots, Default 1", min = 1,
+        description = "How Many More Darts the 0-0-3 Tower Shoots, Default 1", 
         requiresRestart = true
     };
     internal static readonly ModSettingInt B3MultiShotOffset = new(0)
@@ -1523,7 +1523,7 @@ public class CustomizableTower : BloonsTD6Mod
     {
         category = BottomPathMultiShot,
         displayName = "Bottom Path Upgrade 4 Number of Darts",
-        description = "How Many More Darts the 0-0-4 Tower Shoots, Default 1", min = 1,
+        description = "How Many More Darts the 0-0-4 Tower Shoots, Default 1", 
         requiresRestart = true
     };
     internal static readonly ModSettingInt B4MultiShotOffset = new(0)
@@ -1544,7 +1544,7 @@ public class CustomizableTower : BloonsTD6Mod
     {
         category = BottomPathMultiShot,
         displayName = "Bottom Path Upgrade 5 Number of Darts",
-        description = "How Many More Darts the 0-0-5 Tower Shoots, Default 1", min = 1,
+        description = "How Many More Darts the 0-0-5 Tower Shoots, Default 1", 
         requiresRestart = true
     };
     internal static readonly ModSettingInt B5MultiShotOffset = new(0)
