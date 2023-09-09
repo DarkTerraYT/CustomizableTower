@@ -42,7 +42,6 @@ namespace CustomizableTower
                 towerModel.GetWeapon().rate = CustomizableTower.Speed;
                 towerModel.GetAttackModel().range = CustomizableTower.Range;
                 var proj = towerModel.GetWeapon().projectile;
-                proj.ApplyDisplay<CustomizedProjectileDisplay>();
                 proj.GetDamageModel().damage = CustomizableTower.Damage;
                 var DamageModel = proj.GetDamageModel();
                 if (CustomizableTower.HitAll)
