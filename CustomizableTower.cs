@@ -49,20 +49,6 @@ public class CustomizableTower : BloonsTD6Mod
         max = 15,
         requiresRestart = true
     };
-    internal static readonly ModSettingBool CopyAttackModel = new(false)
-    {
-        category = BaseTower,
-        displayName = "Copy Attack Model",
-        description = "Enables Copying an Attack Model From Another Tower",
-        requiresRestart = true
-    };
-    internal static readonly ModSettingString CopyAttackModelString = new("NinjaMonkey-000")
-    {
-        category = BaseTower,
-        displayName = "Copied Attack Model",
-        description = "The Attack Model Copied, Uses The Format TowerName-000. You Can Change The Numbers at The End Just as Long as There's Three, For Example: SpikeFactory-030",
-        requiresRestart = true
-    };
     internal static readonly ModSettingBool GenerateMoney = new(false)
     {
         category = BaseTower,
