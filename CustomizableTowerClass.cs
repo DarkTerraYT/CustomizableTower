@@ -36,7 +36,7 @@ namespace CustomizableTower
             if(CustomizableTower.CopyAttackModel)
             {
                 towerModel.GetWeapon(0).rate = 9999999999999999999;
-                towerModel.AddBehavior(Game.instance.model.GetTowerFromId(CustomizableTower.CopyAttackModelString));
+                towerModel.AddBehavior(Game.instance.model.GetTowerFromId(CustomizableTower.CopyAttackModelString).GetAttackModel().Duplicate());
                 towerModel.ApplyDisplay<CustomizedTowerDisplay>();
                 towerModel.range = CustomizableTower.Range;
                 towerModel.GetWeapon(1).projectile.pierce = CustomizableTower.Pierce;
