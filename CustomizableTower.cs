@@ -73,6 +73,878 @@ public class CustomizableTower : BloonsTD6Mod
         requiresRestart = true
     };
 
+    internal static readonly ModSettingCategory BaseTowerDamageModifiers = new("Base Tower Damage Modifiers");
+
+    internal static readonly ModSettingBool Moabs = new(false)
+    {
+        category = BaseTowerDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble MoabDamageMulti = new(1)
+    {
+        category= BaseTowerDamageModifiers,
+        requiresRestart=true
+    };
+
+    internal static readonly ModSettingDouble MoabDamageAdditive = new(1)
+    {
+        category = BaseTowerDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool Ceramics = new(false)
+    {
+        category = BaseTowerDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble CeramicDamageMulti = new(1)
+    {
+        category = BaseTowerDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble CeramicDamageAdditive = new(1)
+    {
+        category = BaseTowerDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool Fortified = new(false)
+    {
+        category = BaseTowerDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble FortifiedDamageMulti = new(1)
+    {
+        category = BaseTowerDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble FortifiedDamageAdditive = new(1)
+    {
+        category = BaseTowerDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingCategory TopPathDamageModifiers = new("Top Path Damage Modifiers");
+
+    internal static readonly ModSettingBool T1Moabs = new(false)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T1MoabDamageMulti = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T1MoabDamageAdditive = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool T1Ceramics = new(false)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T1CeramicDamageMulti = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T1CeramicDamageAdditive = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool T1Fortified = new(false)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T1FortifiedDamageMulti = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T1FortifiedDamageAdditive = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool T2Moabs = new(false)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T2MoabDamageMulti = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T2MoabDamageAdditive = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool T2Ceramics = new(false)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T2CeramicDamageMulti = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T2CeramicDamageAdditive = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool T2Fortified = new(false)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T2FortifiedDamageMulti = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T2FortifiedDamageAdditive = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool T3Moabs = new(false)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T3MoabDamageMulti = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T3MoabDamageAdditive = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool T3Ceramics = new(false)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T3CeramicDamageMulti = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T3CeramicDamageAdditive = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool T3Fortified = new(false)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T3FortifiedDamageMulti = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T3FortifiedDamageAdditive = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool T4Moabs = new(false)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T4MoabDamageMulti = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T4MoabDamageAdditive = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool T4Ceramics = new(false)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T4CeramicDamageMulti = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T4CeramicDamageAdditive = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool T4Fortified = new(false)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T4FortifiedDamageMulti = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T4FortifiedDamageAdditive = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool T5Moabs = new(false)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T5MoabDamageMulti = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T5MoabDamageAdditive = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool T5Ceramics = new(false)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T5CeramicDamageMulti = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T5CeramicDamageAdditive = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool T5Fortified = new(false)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T5FortifiedDamageMulti = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble T5FortifiedDamageAdditive = new(1)
+    {
+        category = TopPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingCategory MiddlePathDamageModifiers = new("Middle Path Damage Modifiers");
+
+    internal static readonly ModSettingBool M1Moabs = new(false)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M1MoabDamageMulti = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M1MoabDamageAdditive = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool M1Ceramics = new(false)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M1CeramicDamageMulti = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M1CeramicDamageAdditive = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool M1Fortified = new(false)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M1FortifiedDamageMulti = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M1FortifiedDamageAdditive = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool M2Moabs = new(false)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M2MoabDamageMulti = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M2MoabDamageAdditive = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool M2Ceramics = new(false)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M2CeramicDamageMulti = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M2CeramicDamageAdditive = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool M2Fortified = new(false)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M2FortifiedDamageMulti = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M2FortifiedDamageAdditive = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool M3Moabs = new(false)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M3MoabDamageMulti = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M3MoabDamageAdditive = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool M3Ceramics = new(false)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M3CeramicDamageMulti = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M3CeramicDamageAdditive = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool M3Fortified = new(false)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M3FortifiedDamageMulti = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M3FortifiedDamageAdditive = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool M4Moabs = new(false)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M4MoabDamageMulti = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M4MoabDamageAdditive = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool M4Ceramics = new(false)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M4CeramicDamageMulti = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M4CeramicDamageAdditive = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool M4Fortified = new(false)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M4FortifiedDamageMulti = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M4FortifiedDamageAdditive = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool M5Moabs = new(false)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M5MoabDamageMulti = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M5MoabDamageAdditive = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool M5Ceramics = new(false)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M5CeramicDamageMulti = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M5CeramicDamageAdditive = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool M5Fortified = new(false)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M5FortifiedDamageMulti = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble M5FortifiedDamageAdditive = new(1)
+    {
+        category = MiddlePathDamageModifiers,
+        requiresRestart = true
+    };
+    internal static readonly ModSettingCategory BottomPathDamageModifiers = new("Bottom Path Damage Modifiers");
+
+    internal static readonly ModSettingBool B1Moabs = new(false)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B1MoabDamageMulti = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B1MoabDamageAdditive = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool B1Ceramics = new(false)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B1CeramicDamageMulti = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B1CeramicDamageAdditive = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool B1Fortified = new(false)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B1FortifiedDamageMulti = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B1FortifiedDamageAdditive = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool B2Moabs = new(false)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B2MoabDamageMulti = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B2MoabDamageAdditive = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool B2Ceramics = new(false)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B2CeramicDamageMulti = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B2CeramicDamageAdditive = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool B2Fortified = new(false)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B2FortifiedDamageMulti = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B2FortifiedDamageAdditive = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool B3Moabs = new(false)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B3MoabDamageMulti = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B3MoabDamageAdditive = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool B3Ceramics = new(false)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B3CeramicDamageMulti = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B3CeramicDamageAdditive = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool B3Fortified = new(false)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B3FortifiedDamageMulti = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B3FortifiedDamageAdditive = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool B4Moabs = new(false)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B4MoabDamageMulti = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B4MoabDamageAdditive = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool B4Ceramics = new(false)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B4CeramicDamageMulti = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B4CeramicDamageAdditive = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool B4Fortified = new(false)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B4FortifiedDamageMulti = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B4FortifiedDamageAdditive = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool B5Moabs = new(false)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B5MoabDamageMulti = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B5MoabDamageAdditive = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool B5Ceramics = new(false)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B5CeramicDamageMulti = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B5CeramicDamageAdditive = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool B5Fortified = new(false)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B5FortifiedDamageMulti = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingDouble B5FortifiedDamageAdditive = new(1)
+    {
+        category = BottomPathDamageModifiers,
+        requiresRestart = true
+    };
+
+
     internal static readonly ModSettingCategory ProjectileType = new("Projectile Type");
 
     internal static readonly ModSettingBool Dart = new(true)

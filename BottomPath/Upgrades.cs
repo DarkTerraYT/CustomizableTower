@@ -7,9 +7,9 @@ using static CustomizableTower.CustomizableTowerClass;
 using Il2CppAssets.Scripts.Models.Towers.Filters;
 using CustomizableTower;
 using Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions;
-using Il2CppAssets.Scripts.Models.Towers.Weapons;
 using Il2CppAssets.Scripts.Models.Towers.Projectiles;
 using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
+using Il2CppAssets.Scripts.Models.Towers.Weapons;
 
 namespace BottomPath
 {
@@ -69,6 +69,18 @@ namespace BottomPath
                 else if (B1HitFrozen && B1HitPurple && B1HitFrozen)
                 {
                     DamageModel.immuneBloonProperties = BloonProperties.None;
+                }
+                if (B1Moabs)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", B1MoabDamageMulti, B1MoabDamageAdditive, false, false));
+                }
+                if (B1Ceramics)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Ceramic", "Ceramic", B1CeramicDamageMulti, B1CeramicDamageAdditive, false, false));
+                }
+                if (B1Fortified)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModelForTagModel_Fortified", "Fortified", B1FortifiedDamageMulti, B1FortifiedDamageAdditive, false, false));
                 }
                 WeaponModel.emission = new ArcEmissionModel("Emission", B1MultiShotNumber, B1MultiShotOffset, B1MultiShotRotation, null, false, false);
 
@@ -140,6 +152,19 @@ namespace BottomPath
                 {
                     DamageModel.immuneBloonProperties = BloonProperties.None;
                 }
+                if (B2Moabs)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", B2MoabDamageMulti, B2MoabDamageAdditive, false, false));
+                }
+                if (B2Ceramics)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Ceramic", "Ceramic", B2CeramicDamageMulti, B2CeramicDamageAdditive, false, false));
+                }
+                if (B2Fortified)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModelForTagModel_Fortified", "Fortified", B2FortifiedDamageMulti, B2FortifiedDamageAdditive, false, false));
+                }
+
                 towerModel.GetAttackModel().weapons[0].emission = new ArcEmissionModel("Emission", B2MultiShotNumber, B2MultiShotOffset, B2MultiShotRotation, null, false, false);
             }
             towerModel.range += BU2Range;
@@ -210,6 +235,19 @@ namespace BottomPath
                 {
                     DamageModel.immuneBloonProperties = BloonProperties.None;
                 }
+                if (B4Moabs)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", B4MoabDamageMulti, B4MoabDamageAdditive, false, false));
+                }
+                if (B4Ceramics)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Ceramic", "Ceramic", B4CeramicDamageMulti, B4CeramicDamageAdditive, false, false));
+                }
+                if (B4Fortified)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModelForTagModel_Fortified", "Fortified", B4FortifiedDamageMulti, B4FortifiedDamageAdditive, false, false));
+                }
+
                 towerModel.GetAttackModel().weapons[0].emission = new ArcEmissionModel("Emission", B3MultiShotNumber, B3MultiShotOffset, B3MultiShotRotation, null, false, false);
             }
             towerModel.range += BU3Range;
@@ -278,6 +316,19 @@ namespace BottomPath
                 {
                     DamageModel.immuneBloonProperties = BloonProperties.None;
                 }
+                if (B4Moabs)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", B4MoabDamageMulti, B4MoabDamageAdditive, false, false));
+                }
+                if (B4Ceramics)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Ceramic", "Ceramic", B4CeramicDamageMulti, B4CeramicDamageAdditive, false, false));
+                }
+                if (B4Fortified)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModelForTagModel_Fortified", "Fortified", B4FortifiedDamageMulti, B4FortifiedDamageAdditive, false, false));
+                }
+
                 towerModel.GetAttackModel().weapons[0].emission = new ArcEmissionModel("Emission", B4MultiShotNumber, B4MultiShotOffset, B4MultiShotRotation, null, false, false);
             }
             towerModel.range += BU4Range;
@@ -348,6 +399,18 @@ namespace BottomPath
                     DamageModel.immuneBloonProperties = BloonProperties.None;
                 }
                 towerModel.GetAttackModel().weapons[0].emission = new ArcEmissionModel("Emission", B5MultiShotNumber, B5MultiShotOffset, B5MultiShotRotation, null, false, false);
+                if (B5Moabs)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", B5MoabDamageMulti, B5MoabDamageAdditive, false, false));
+                }
+                if (B5Ceramics)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Ceramic", "Ceramic", B5CeramicDamageMulti, B5CeramicDamageAdditive, false, false));
+                }
+                if (B5Fortified)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModelForTagModel_Fortified", "Fortified", B5FortifiedDamageMulti, B5FortifiedDamageAdditive, false, false));
+                }
 
             }
             towerModel.range += BU5Range;

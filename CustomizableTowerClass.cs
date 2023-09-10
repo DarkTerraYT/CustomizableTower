@@ -202,6 +202,18 @@ namespace CustomizableTower
                 {
                     DamageModel.immuneBloonProperties = Il2Cpp.BloonProperties.None;
                 }
+                if (Moabs)
+                {
+                    weaponModel_.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", MoabDamageMulti, MoabDamageAdditive, false, false));
+                }
+                if (Ceramics)
+                {
+                    weaponModel_.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Ceramic", "Ceramic", CeramicDamageMulti, CeramicDamageAdditive, false, false));
+                }
+                if (Fortified)
+                {
+                    weaponModel_.projectile.AddBehavior(new DamageModifierForTagModel("DamageModelForTagModel_Fortified", "Fortified", FortifiedDamageMulti, FortifiedDamageAdditive, false, false));
+                }
                 weaponModel_.emission = new ArcEmissionModel("Emission", MultishotNumber, MultiShotOffset, MultiShotRotation, null, false, false);
             }
             towerModel.range = Range;

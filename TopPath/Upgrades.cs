@@ -68,6 +68,18 @@ namespace TopPath
                 {
                     DamageModel.immuneBloonProperties = BloonProperties.None;
                 }
+                if (T1Moabs)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", T1MoabDamageMulti, T1MoabDamageAdditive, false, false));
+                }
+                if (T1Ceramics)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Ceramic", "Ceramic", T1CeramicDamageMulti, T1CeramicDamageAdditive, false, false));
+                }
+                if (T1Fortified)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModelForTagModel_Fortified", "Fortified", T1FortifiedDamageMulti, T1FortifiedDamageAdditive, false, false));
+                }
                 towerModel.GetAttackModel().weapons[0].emission = new ArcEmissionModel("Emission", T1MultiShotNumber, T1MultiShotOffset, T1MultiShotRotation, null, false, false);
             }
             towerModel.range += TU1Range;
@@ -138,6 +150,18 @@ namespace TopPath
                 {
                     DamageModel.immuneBloonProperties = BloonProperties.None;
                 }
+                if (T2Moabs)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", T2MoabDamageMulti, T2MoabDamageAdditive, false, false));
+                }
+                if (T2Ceramics)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Ceramic", "Ceramic", T2CeramicDamageMulti, T2CeramicDamageAdditive, false, false));
+                }
+                if (T2Fortified)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModelForTagModel_Fortified", "Fortified", T2FortifiedDamageMulti, T2FortifiedDamageAdditive, false, false));
+                }
                 towerModel.GetAttackModel().weapons[0].emission = new ArcEmissionModel("Emission", T2MultiShotNumber, T2MultiShotOffset, T2MultiShotRotation, null, false, false);
             }
             towerModel.range += TU2Range;
@@ -206,6 +230,18 @@ namespace TopPath
                 else if (T3HitFrozen && T3HitPurple && T3HitFrozen)
                 {
                     DamageModel.immuneBloonProperties = BloonProperties.None;
+                }
+                if (T3Moabs)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", T3MoabDamageMulti, T3MoabDamageAdditive, false, false));
+                }
+                if (T3Ceramics)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Ceramic", "Ceramic", T3CeramicDamageMulti, T3CeramicDamageAdditive, false, false));
+                }
+                if (T3Fortified)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModelForTagModel_Fortified", "Fortified", T3FortifiedDamageMulti, T3FortifiedDamageAdditive, false, false));
                 }
                 towerModel.GetAttackModel().weapons[0].emission = new ArcEmissionModel("Emission", T3MultiShotNumber, T3MultiShotOffset, T3MultiShotRotation, null, false, false);
             }
@@ -276,6 +312,18 @@ namespace TopPath
                 {
                     DamageModel.immuneBloonProperties = BloonProperties.None;
                 }
+                if (T4Moabs)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", T4MoabDamageMulti, T4MoabDamageAdditive, false, false));
+                }
+                if (T4Ceramics)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Ceramic", "Ceramic", T4CeramicDamageMulti, T4CeramicDamageAdditive, false, false));
+                }
+                if (T4Fortified)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModelForTagModel_Fortified", "Fortified", T4FortifiedDamageMulti, T4FortifiedDamageAdditive, false, false));
+                }
                 towerModel.GetAttackModel().weapons[0].emission = new ArcEmissionModel("Emission", T4MultiShotNumber, T4MultiShotOffset, T4MultiShotRotation, null, false, false);
             }
             towerModel.range += TU4Range;
@@ -344,6 +392,18 @@ namespace TopPath
                 else if (T5HitFrozen && T5HitPurple && T5HitFrozen)
                 {
                     DamageModel.immuneBloonProperties = BloonProperties.None;
+                }
+                if (T5Moabs)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", T5MoabDamageMulti, T5MoabDamageAdditive, false, false));
+                }
+                if (T5Ceramics)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Ceramic", "Ceramic", T5CeramicDamageMulti, T5CeramicDamageAdditive, false, false));
+                }
+                if (T5Fortified)
+                {
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModelForTagModel_Fortified", "Fortified", T5FortifiedDamageMulti, T5FortifiedDamageAdditive, false, false));
                 }
                 towerModel.GetAttackModel().weapons[0].emission = new ArcEmissionModel("Emission", T5MultiShotNumber, T5MultiShotOffset, T5MultiShotRotation, null, false, false);
             }
