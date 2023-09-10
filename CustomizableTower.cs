@@ -75,7 +75,7 @@ public class CustomizableTower : BloonsTD6Mod
         requiresRestart = true
     };
 
-    internal static readonly ModSettingCategory ProjectileType = new("ProjectileType");
+    internal static readonly ModSettingCategory ProjectileType = new("Projectile Type");
 
     internal static readonly ModSettingBool Dart = new(true)
     {
@@ -105,6 +105,12 @@ public class CustomizableTower : BloonsTD6Mod
     {
         category = ProjectileType,
         requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool LaserShock = new(false)
+    {
+        category = ProjectileType,
+        requiresRestart=true
     };
 
     internal static readonly ModSettingBool Rocket = new(false)
@@ -161,7 +167,7 @@ public class CustomizableTower : BloonsTD6Mod
         category = ProjectileType,
         requiresRestart = true,
         min = 1,
-        max = 4,
+        max = 5,
         description = "Which Top Path Upgrade it Uses. Default 1"
     };
 
@@ -178,24 +184,6 @@ public class CustomizableTower : BloonsTD6Mod
         min = 1,
         max = 5,
         description = "Which Bottom Path Upgrade it Affects"
-    };
-
-    internal static readonly ModSettingBool CannonBall = new(false)
-    {
-        category = ProjectileType,
-        requiresRestart = true
-    };
-
-    internal static readonly ModSettingBool Grape = new(false)
-    {
-        category = ProjectileType,
-        requiresRestart = true
-    };
-
-    internal static readonly ModSettingBool FireyGrape = new(false)
-    {
-        category = ProjectileType,
-        requiresRestart = true
     };
 
     internal static readonly ModSettingBool Sniper = new(false)
@@ -240,13 +228,13 @@ public class CustomizableTower : BloonsTD6Mod
         requiresRestart = true
     };
 
-    internal static readonly ModSettingInt BottomPathSpikesUsed = new(1)
+    internal static readonly ModSettingInt BottomPathSpikesUsed = new(3)
     {
         category = ProjectileType,
         requiresRestart = true,
-        min = 1,
-        max = 3,
-        description = "Which Upgrade it Uses. 1 is Longer Lasting Spikes"
+        min = 3,
+        max = 5,
+        description = "Which Upgrade it Uses. 3 is Longer Life Spikes "
     };
 
     internal static readonly ModSettingBool SpikedMines = new(false)
@@ -260,21 +248,14 @@ public class CustomizableTower : BloonsTD6Mod
         category = ProjectileType,
         requiresRestart = true,
         min = 1,
-        max = 2,
-        description = "Which Spiked Mines it uses, 1 is Spiked Mines, 2 is Super Mines"
+        max = 5,
+        description = "Which Top Path Upgrade it Uses."
     };
 
     internal static readonly ModSettingBool Nail = new(false)
     {
         category = ProjectileType,
         requiresRestart = true
-    };
-
-    internal static readonly ModSettingBool Bananas = new(false)
-    {
-        category = ProjectileType,
-        requiresRestart = true,
-        description = "Literally does nothing, if you want it to make money and nothing else enable GenerateCash and set the attack speed all the way up to max"
     };
 
     internal static readonly ModSettingBool Boomerangs = new(false)
@@ -1764,26 +1745,37 @@ public class CustomizableTower : BloonsTD6Mod
     internal static ModSettingCategory ParagonSettings = new("Paragon Customization");
     internal static ModSettingInt ParagonCost = new(0) 
     {
-        category = ParagonSettings
+        category = ParagonSettings,
+        requiresRestart = true
     };
     internal static ModSettingString ParagonName = new("Paragon")
     {
-        category = ParagonSettings
+        category = ParagonSettings,
+        requiresRestart = true
     };
     internal static ModSettingInt ParagonDamageBuff = new(1) 
     { 
-        category = ParagonSettings 
+        category = ParagonSettings,
+        requiresRestart = true
     };
     internal static ModSettingDouble ParagonSpeedModifier = new(1)
     {
-        category = ParagonSettings
+        category = ParagonSettings,
+        requiresRestart = true
     };
     internal static ModSettingDouble ParagonRange = new(1)
     {
-        category = ParagonSettings
+        category = ParagonSettings,
+        requiresRestart = true
     };
     internal static ModSettingInt ParagonPierce = new(1)
     {
-        category = ParagonSettings
+        category = ParagonSettings,
+        requiresRestart = true
+    };
+    internal static readonly ModSettingString ParagonDescription = new("This is a Paragon")
+    {
+        category = ParagonSettings,
+        requiresRestart = true
     };
 }
