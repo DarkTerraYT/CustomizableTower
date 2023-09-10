@@ -18,8 +18,6 @@ public class CustomizableTower : BloonsTD6Mod
 {
     internal static readonly ModSettingCategory BaseTower = new("Base Tower Customization");
 
-    internal static int MultiShotTotal = 0;
-
     internal static readonly ModSettingInt Cost = new(0)
     {
         category = BaseTower,
@@ -1776,6 +1774,22 @@ public class CustomizableTower : BloonsTD6Mod
     internal static readonly ModSettingString ParagonDescription = new("This is a Paragon")
     {
         category = ParagonSettings,
+        requiresRestart = true
+    };
+    internal static ModSettingInt ParagonMultiShotNumber = new(1)
+    {
+        category = ParagonSettings,
+        requiresRestart = true
+    };
+    internal static ModSettingDouble ParagonMultiShotOffset = new(0)
+    {
+        category = ParagonSettings,
+        requiresRestart = true
+    };
+    internal static ModSettingDouble ParagonMultiShotAngle = new(0)
+    {
+        category = ParagonSettings,
+        min = 0,
         requiresRestart = true
     };
 }
