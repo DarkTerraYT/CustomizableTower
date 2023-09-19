@@ -9,6 +9,8 @@ Adds a Completely Customizable Tower to The Game. You Can Customize it's Stats i
 
 Please don't use this in competitive modes, one: it could get your account flagged, and two: it ruins the fun for others.
 
+<h1 aling="left"><img alt="GitHub all releases" height="25" src="https://img.shields.io/github/downloads/DarkTerraYT/CustomizableTower/total?label=Total%20Dowloads"></h1>
+
 <a href="https://discord.gg/xegnVEBRuE">
     <img align="left" alt="Discord" height = "60" src="discord.png">
 </a>
