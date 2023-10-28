@@ -30,8 +30,9 @@ namespace BottomPath
             foreach (var WeaponModel in towerModel.GetWeapons())
             {
                 var ProjectileModel = WeaponModel.projectile;
-                ProjectileModel.AddBehavior(new DamageModel(null, TotalDamage, 9999999999999999999, false, false, true, Il2Cpp.BloonProperties.None, Il2Cpp.BloonProperties.None));
                 var DamageModel = ProjectileModel.GetDamageModel();
+                DamageModel.damage += BU1Damage;
+
                 WeaponModel.rate *= BU1Speed;
                 ProjectileModel.pierce += BU1Pierce;
                 if (B1HitAll)
@@ -112,8 +113,9 @@ namespace BottomPath
             foreach (var WeaponModel in towerModel.GetWeapons())
             {
                 var ProjectileModel = WeaponModel.projectile;
-                ProjectileModel.AddBehavior(new DamageModel(null, TotalDamage, 9999999999999999999, false, false, true, Il2Cpp.BloonProperties.None, Il2Cpp.BloonProperties.None));
                 var DamageModel = ProjectileModel.GetDamageModel();
+                DamageModel.damage += BU2Damage;
+
                 WeaponModel.rate *= BU2Speed;
                 ProjectileModel.pierce += BU2Pierce;
                 if (B2HitAll)
@@ -194,8 +196,9 @@ namespace BottomPath
             foreach (var WeaponModel in towerModel.GetWeapons())
             {
                 var ProjectileModel = WeaponModel.projectile;
-                ProjectileModel.AddBehavior(new DamageModel(null, TotalDamage, 9999999999999999999, false, false, true, Il2Cpp.BloonProperties.None, Il2Cpp.BloonProperties.None));
                 var DamageModel = ProjectileModel.GetDamageModel();
+                DamageModel.damage += BU3Damage;
+
                 WeaponModel.rate *= BU3Speed;
                 ProjectileModel.pierce += BU3Pierce;
 
@@ -276,8 +279,9 @@ namespace BottomPath
             foreach (var WeaponModel in towerModel.GetWeapons())
             {
                 var ProjectileModel = WeaponModel.projectile;
-                ProjectileModel.AddBehavior(new DamageModel(null, TotalDamage, 9999999999999999999, false, false, true, Il2Cpp.BloonProperties.None, Il2Cpp.BloonProperties.None));
                 var DamageModel = ProjectileModel.GetDamageModel();
+                DamageModel.damage += BU4Damage;
+
                 WeaponModel.rate *= BU4Speed;
                 ProjectileModel.pierce += BU4Pierce;
                 if (B4HitAll)
@@ -358,8 +362,9 @@ namespace BottomPath
             foreach (var WeaponModel in towerModel.GetWeapons())
             {
                 var ProjectileModel = WeaponModel.projectile;
-                ProjectileModel.AddBehavior(new DamageModel(null, TotalDamage, 9999999999999999999, false, false, true, Il2Cpp.BloonProperties.None, Il2Cpp.BloonProperties.None));
                 var DamageModel = ProjectileModel.GetDamageModel();
+                DamageModel.damage += BU5Damage;
+
                 WeaponModel.rate *= BU5Speed;
                 ProjectileModel.pierce += BU5Pierce;
                 if (B5HitAll)

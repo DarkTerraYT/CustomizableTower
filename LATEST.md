@@ -1,1 +1,1 @@
-Made The Multishot Better Once Again, it Now Has a Total Multishot number and each upgrade increases it by the upgrades multishotnumber
+Fixed the insane damage caused by a little stupid of me

@@ -36,11 +36,10 @@ namespace CustomizableTower
         public override string DisplayName => "Customizable Tower";
         public override string Description => "Please don't use this in competitive modes, one: it could get your account flagged, and two: it ruins the fun for others.";
 
-        internal static int TotalDamage = 0;
+        internal static int TotalDamage = Damage;
 
         public override void ModifyBaseTowerModel(TowerModel towerModel)
         {
-            TotalDamage += Damage;
             towerModel.ApplyDisplay<CustomizedTowerDisplay>();
             towerModel.GetAttackModel().RemoveWeapon(towerModel.GetAttackModel().weapons[0]);
             if (Dart)
@@ -82,7 +81,7 @@ namespace CustomizableTower
             {
                 towerModel.GetAttackModel().AddWeapon(Game.instance.model.GetTowerFromId("SniperMonkey").GetWeapon().Duplicate());
             }
-            if (Morter)
+            if (Mortar)
             {
                 towerModel.GetAttackModel().AddWeapon(Game.instance.model.GetTowerFromId("MortarMonkey").GetWeapon().Duplicate());
             }
@@ -92,7 +91,7 @@ namespace CustomizableTower
             }
             if (Rocket)
             {
-                towerModel.GetAttackModel().AddWeapon(Game.instance.model.GetTowerFromId("DarlingGunner-030").GetWeapon().Duplicate());
+                towerModel.GetAttackModel().AddWeapon(Game.instance.model.GetTowerFromId("DartlingGunner-030").GetWeapon().Duplicate());
             }
             if (Magic)
             {
@@ -163,7 +162,10 @@ namespace CustomizableTower
                 var projectileModel_ = weaponModel_.projectile;
                 projectileModel_.pierce = Pierce;
                 weaponModel_.rate = Speed;
-                projectileModel_.AddBehavior(new DamageModel(null, TotalDamage, 9999999999999999999, false, false, true, Il2Cpp.BloonProperties.None, Il2Cpp.BloonProperties.None));
+                if(!projectileModel_.HasBehavior<DamageModel>())
+                {
+                    projectileModel_.AddBehavior(new DamageModel(null, 0, 9999999999999999999, false, false, true, Il2Cpp.BloonProperties.None, Il2Cpp.BloonProperties.None));
+                }
                 var DamageModel = projectileModel_.GetDamageModel();
                 DamageModel.damage = Damage;
                 if (HitAll)

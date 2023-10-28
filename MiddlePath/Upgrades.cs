@@ -29,8 +29,9 @@ namespace MiddlePath
             {
                 towerModel.GetAttackModel().weapons[0].emission = new ArcEmissionModel("Emission", M1MultiShotNumber, M1MultiShotOffset, M1MultiShotRotation, null, false, false);
                 var ProjectileModel = WeaponModel.projectile;
-                ProjectileModel.AddBehavior(new DamageModel(null, TotalDamage, 9999999999999999999, false, false, true, Il2Cpp.BloonProperties.None, Il2Cpp.BloonProperties.None));
                 var DamageModel = ProjectileModel.GetDamageModel();
+                DamageModel.damage += MU1Damage;
+
                 WeaponModel.rate *= MU1Speed;
                 ProjectileModel.pierce += MU1Pierce;
                 if (M1HitAll)
@@ -111,8 +112,9 @@ namespace MiddlePath
             {
                 towerModel.GetAttackModel().weapons[0].emission = new ArcEmissionModel("Emission", M2MultiShotNumber, M2MultiShotOffset, M2MultiShotRotation, null, false, false);
                 var ProjectileModel = WeaponModel.projectile;
-                ProjectileModel.AddBehavior(new DamageModel(null, TotalDamage, 9999999999999999999, false, false, true, Il2Cpp.BloonProperties.None, Il2Cpp.BloonProperties.None));
                 var DamageModel = ProjectileModel.GetDamageModel();
+                DamageModel.damage += MU2Damage;
+
                 WeaponModel.rate *= MU2Speed;
                 ProjectileModel.pierce += MU2Pierce;
                 if (M2HitAll)
@@ -192,8 +194,8 @@ namespace MiddlePath
             {
                 towerModel.GetAttackModel().weapons[0].emission = new ArcEmissionModel("Emission", M3MultiShotNumber, M3MultiShotOffset, M3MultiShotRotation, null, false, false);
                 var ProjectileModel = WeaponModel.projectile;
-                ProjectileModel.AddBehavior(new DamageModel(null, TotalDamage, 9999999999999999999, false, false, true, Il2Cpp.BloonProperties.None, Il2Cpp.BloonProperties.None));
                 var DamageModel = ProjectileModel.GetDamageModel();
+                DamageModel.damage += MU3Damage;
 
                 WeaponModel.rate *= MU3Speed;
                 ProjectileModel.pierce += MU3Pierce;
@@ -274,8 +276,8 @@ namespace MiddlePath
             {
                 towerModel.GetAttackModel().weapons[0].emission = new ArcEmissionModel("Emission", M4MultiShotNumber, M4MultiShotOffset, M4MultiShotRotation, null, false, false);
                 var ProjectileModel = WeaponModel.projectile;
-                ProjectileModel.AddBehavior(new DamageModel(null, TotalDamage, 9999999999999999999, false, false, true, Il2Cpp.BloonProperties.None, Il2Cpp.BloonProperties.None));
                 var DamageModel = ProjectileModel.GetDamageModel();
+                DamageModel.damage += MU4Damage;
 
                 WeaponModel.rate *= MU4Speed;
                 ProjectileModel.pierce += MU4Pierce;
@@ -355,8 +357,8 @@ namespace MiddlePath
             foreach (var WeaponModel in towerModel.GetWeapons())
             {
                 var ProjectileModel = WeaponModel.projectile;
-                ProjectileModel.AddBehavior(new DamageModel(null, TotalDamage, 9999999999999999999, false, false, true, Il2Cpp.BloonProperties.None, Il2Cpp.BloonProperties.None));
                 var DamageModel = ProjectileModel.GetDamageModel();
+                DamageModel.damage += MU5Damage;
 
                 WeaponModel.rate *= MU5Speed;
                 ProjectileModel.pierce += MU5Pierce;

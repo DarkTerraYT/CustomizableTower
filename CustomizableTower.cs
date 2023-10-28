@@ -16,6 +16,12 @@ namespace CustomizableTower;
 
 public class CustomizableTower : BloonsTD6Mod
 {
+
+    public override void OnApplicationStart()
+    {
+        CustomizableTowerClass.TotalDamage = 0;
+    }
+
     internal static readonly ModSettingCategory BaseTower = new("Base Tower Customization");
 
     internal static readonly ModSettingInt Cost = new(0)
@@ -959,7 +965,7 @@ public class CustomizableTower : BloonsTD6Mod
         requiresRestart = true
     };
 
-    internal static readonly ModSettingBool Morter = new(false)
+    internal static readonly ModSettingBool Mortar = new(false)
     {
         category = ProjectileType,
         requiresRestart = true
@@ -2628,7 +2634,7 @@ public class CustomizableTower : BloonsTD6Mod
         category = ParagonSettings,
         requiresRestart = true
     };
-    internal static ModSettingDouble ParagonSpeedModifier = new(1)
+    internal static ModSettingDouble ParagonSpeed = new(1)
     {
         category = ParagonSettings,
         requiresRestart = true

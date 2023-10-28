@@ -19,14 +19,14 @@ namespace CustomizableTower
             CustomizableTowerClass.TotalDamage += ParagonDamageBuff;
             foreach(var WeaponModel in towerModel.GetWeapons())
             {
-                WeaponModel.rate *= ParagonSpeedModifier;
-                WeaponModel.projectile.pierce += ParagonPierce;
+                WeaponModel.rate = ParagonSpeed;
+                WeaponModel.projectile.pierce = ParagonPierce;
                 WeaponModel.projectile.AddBehavior(new DamageModel(null, CustomizableTowerClass.TotalDamage, 9999999999999999999, false, false, true, Il2Cpp.BloonProperties.None, Il2Cpp.BloonProperties.None));
                 WeaponModel.emission = new ArcEmissionModel(null, ParagonMultiShotNumber, ParagonMultiShotOffset, ParagonMultiShotAngle, null, false, false);
             }
             towerModel.ApplyDisplay<CustomizableParagonDisplay>();
-            towerModel.range += ParagonRange;
-            towerModel.GetAttackModel().range += ParagonRange;
+            towerModel.range = ParagonRange;
+            towerModel.GetAttackModel().range = ParagonRange;
             towerModel.GetDescendants<FilterInvisibleModel>().ForEach(model => model.isActive = false);
         }
     }
