@@ -50,7 +50,6 @@ public class CustomizableTower : BloonsTD6Mod
         category = BaseTower,
         displayName = "Attack Speed (In Seconds)",
         min = 0,
-        max = 15,
         requiresRestart = true
     };
     internal static readonly ModSettingBool GenerateMoney = new(false)
@@ -76,6 +75,26 @@ public class CustomizableTower : BloonsTD6Mod
     internal static readonly ModSettingInt BananasPerRound = new(5)
     {
         category = BaseTower,
+        requiresRestart = true
+    };
+    public static readonly ModSettingString BaseTowerId = new("DartMonkey")
+    {
+        category = BaseTower,
+        requiresRestart = true,
+        description = "Tower Id for this tower's base ID. An Example for this is Druid or SuperMonkey-050"
+    }; 
+    internal static readonly ModSettingDouble ProjectileSpeed = new(300)
+    {
+        category = BaseTower,
+        description = "How fast the projectile travels. Dart Monkey's Dart is 300",
+        min = 0,
+        requiresRestart = true
+    };
+    internal static readonly ModSettingDouble ProjectileLifespan = new(0.25)
+    {
+        category = BaseTower,
+        description = "How fast the projectile lasts. Dart Monkey's Dart is 0.25",
+        min = 0,
         requiresRestart = true
     };
 
