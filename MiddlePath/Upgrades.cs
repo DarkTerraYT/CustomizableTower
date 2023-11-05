@@ -77,7 +77,7 @@ namespace MiddlePath
                 }
                 if (M1Moabs)
                 {
-                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", M1MoabDamageMulti, M1MoabDamageAdditive, false, false));
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moabs", "Moabs", M1MoabsDamageMulti, M1MoabsDamageAdditive, false, false));
                 }
                 if (M1Ceramics)
                 {
@@ -165,7 +165,7 @@ namespace MiddlePath
                 }
                 if (M2Moabs)
                 {
-                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", M2MoabDamageMulti, M2MoabDamageAdditive, false, false));
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moabs", "Moabs", M2MoabsDamageMulti, M2MoabsDamageAdditive, false, false));
                 }
                 if (M2Ceramics)
                 {
@@ -256,7 +256,7 @@ namespace MiddlePath
                 }
                 if (M3Moabs)
                 {
-                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", M3MoabDamageMulti, M3MoabDamageAdditive, false, false));
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moabs", "Moabs", M3MoabsDamageMulti, M3MoabsDamageAdditive, false, false));
                 }
                 if (M3Ceramics)
                 {
@@ -339,7 +339,7 @@ namespace MiddlePath
                 }
                 if (M4Moabs)
                 {
-                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", M4MoabDamageMulti, M4MoabDamageAdditive, false, false));
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moabs", "Moabs", M4MoabsDamageMulti, M4MoabsDamageAdditive, false, false));
                 }
                 if (M4Ceramics)
                 {
@@ -425,7 +425,7 @@ namespace MiddlePath
                 }
                 if (M5Moabs)
                 {
-                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", M5MoabDamageMulti, M5MoabDamageAdditive, false, false));
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moabs", "Moabs", M5MoabsDamageMulti, M5MoabsDamageAdditive, false, false));
                 }
                 if (M5Ceramics)
                 {

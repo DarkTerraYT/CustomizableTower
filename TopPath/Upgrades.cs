@@ -75,7 +75,7 @@ namespace TopPath
                 }
                 if (T1Moabs)
                 {
-                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", T1MoabDamageMulti, T1MoabDamageAdditive, false, false));
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moabs", "Moabs", T1MoabsDamageMulti, T1MoabsDamageAdditive, false, false));
                 }
                 if (T1Ceramics)
                 {
@@ -162,7 +162,7 @@ namespace TopPath
                 }
                 if (T2Moabs)
                 {
-                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", T2MoabDamageMulti, T2MoabDamageAdditive, false, false));
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moabs", "Moabs", T2MoabsDamageMulti, T2MoabsDamageAdditive, false, false));
                 }
                 if (T2Ceramics)
                 {
@@ -249,7 +249,7 @@ namespace TopPath
                 }
                 if (T3Moabs)
                 {
-                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", T3MoabDamageMulti, T3MoabDamageAdditive, false, false));
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moabs", "Moabs", T3MoabsDamageMulti, T3MoabsDamageAdditive, false, false));
                 }
                 if (T3Ceramics)
                 {
@@ -335,7 +335,7 @@ namespace TopPath
                 }
                 if (T4Moabs)
                 {
-                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", T4MoabDamageMulti, T4MoabDamageAdditive, false, false));
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moabs", "Moabs", T4MoabsDamageMulti, T4MoabsDamageAdditive, false, false));
                 }
                 if (T4Ceramics)
                 {
@@ -421,7 +421,7 @@ namespace TopPath
                 }
                 if (T5Moabs)
                 {
-                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", T5MoabDamageMulti, T5MoabDamageAdditive, false, false));
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moabs", "Moabs", T5MoabsDamageMulti, T5MoabsDamageAdditive, false, false));
                 }
                 if (T5Ceramics)
                 {

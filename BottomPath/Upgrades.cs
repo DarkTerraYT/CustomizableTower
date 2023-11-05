@@ -79,7 +79,7 @@ namespace BottomPath
                 }
                 if (B1Moabs)
                 {
-                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", B1MoabDamageMulti, B1MoabDamageAdditive, false, false));
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moabs", "Moabs", B1MoabsDamageMulti, B1MoabsDamageAdditive, false, false));
                 }
                 if (B1Ceramics)
                 {
@@ -168,7 +168,7 @@ namespace BottomPath
                 }
                 if (B2Moabs)
                 {
-                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", B2MoabDamageMulti, B2MoabDamageAdditive, false, false));
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moabs", "Moabs", B2MoabsDamageMulti, B2MoabsDamageAdditive, false, false));
                 }
                 if (B2Ceramics)
                 {
@@ -257,7 +257,7 @@ namespace BottomPath
                 }
                 if (B4Moabs)
                 {
-                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", B4MoabDamageMulti, B4MoabDamageAdditive, false, false));
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moabs", "Moabs", B4MoabsDamageMulti, B4MoabsDamageAdditive, false, false));
                 }
                 if (B4Ceramics)
                 {
@@ -344,7 +344,7 @@ namespace BottomPath
                 }
                 if (B4Moabs)
                 {
-                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", B4MoabDamageMulti, B4MoabDamageAdditive, false, false));
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moabs", "Moabs", B4MoabsDamageMulti, B4MoabsDamageAdditive, false, false));
                 }
                 if (B4Ceramics)
                 {
@@ -433,7 +433,7 @@ namespace BottomPath
                 towerModel.GetAttackModel().weapons[0].emission = new ArcEmissionModel("Emission", B5MultiShotNumber, B5MultiShotOffset, B5MultiShotRotation, null, false, false);
                 if (B5Moabs)
                 {
-                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", B5MoabDamageMulti, B5MoabDamageAdditive, false, false));
+                    WeaponModel.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moabs", "Moabs", B5MoabsDamageMulti, B5MoabsDamageAdditive, false, false));
                 }
                 if (B5Ceramics)
                 {

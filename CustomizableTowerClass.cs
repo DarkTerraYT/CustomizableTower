@@ -208,7 +208,7 @@ namespace CustomizableTower
                 }
                 if (Moabs)
                 {
-                    weaponModel_.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", MoabDamageMulti, MoabDamageAdditive, false, false));
+                    weaponModel_.projectile.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moabs", "Moabs", MoabsDamageMulti, MoabsDamageAdditive, false, false));
                 }
                 if (Ceramics)
                 {

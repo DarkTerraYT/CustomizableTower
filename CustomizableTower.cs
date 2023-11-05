@@ -106,13 +106,13 @@ public class CustomizableTower : BloonsTD6Mod
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble MoabDamageMulti = new(1)
+    internal static readonly ModSettingDouble MoabsDamageMulti = new(1)
     {
         category= BaseTowerDamageModifiers,
         requiresRestart=true
     };
 
-    internal static readonly ModSettingDouble MoabDamageAdditive = new(1)
+    internal static readonly ModSettingDouble MoabsDamageAdditive = new(1)
     {
         category = BaseTowerDamageModifiers,
         requiresRestart = true
@@ -162,13 +162,13 @@ public class CustomizableTower : BloonsTD6Mod
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble T1MoabDamageMulti = new(1)
+    internal static readonly ModSettingDouble T1MoabsDamageMulti = new(1)
     {
         category = TopPathDamageModifiers,
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble T1MoabDamageAdditive = new(1)
+    internal static readonly ModSettingDouble T1MoabsDamageAdditive = new(1)
     {
         category = TopPathDamageModifiers,
         requiresRestart = true
@@ -216,13 +216,13 @@ public class CustomizableTower : BloonsTD6Mod
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble T2MoabDamageMulti = new(1)
+    internal static readonly ModSettingDouble T2MoabsDamageMulti = new(1)
     {
         category = TopPathDamageModifiers,
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble T2MoabDamageAdditive = new(1)
+    internal static readonly ModSettingDouble T2MoabsDamageAdditive = new(1)
     {
         category = TopPathDamageModifiers,
         requiresRestart = true
@@ -270,13 +270,13 @@ public class CustomizableTower : BloonsTD6Mod
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble T3MoabDamageMulti = new(1)
+    internal static readonly ModSettingDouble T3MoabsDamageMulti = new(1)
     {
         category = TopPathDamageModifiers,
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble T3MoabDamageAdditive = new(1)
+    internal static readonly ModSettingDouble T3MoabsDamageAdditive = new(1)
     {
         category = TopPathDamageModifiers,
         requiresRestart = true
@@ -324,13 +324,13 @@ public class CustomizableTower : BloonsTD6Mod
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble T4MoabDamageMulti = new(1)
+    internal static readonly ModSettingDouble T4MoabsDamageMulti = new(1)
     {
         category = TopPathDamageModifiers,
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble T4MoabDamageAdditive = new(1)
+    internal static readonly ModSettingDouble T4MoabsDamageAdditive = new(1)
     {
         category = TopPathDamageModifiers,
         requiresRestart = true
@@ -378,13 +378,13 @@ public class CustomizableTower : BloonsTD6Mod
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble T5MoabDamageMulti = new(1)
+    internal static readonly ModSettingDouble T5MoabsDamageMulti = new(1)
     {
         category = TopPathDamageModifiers,
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble T5MoabDamageAdditive = new(1)
+    internal static readonly ModSettingDouble T5MoabsDamageAdditive = new(1)
     {
         category = TopPathDamageModifiers,
         requiresRestart = true
@@ -434,13 +434,13 @@ public class CustomizableTower : BloonsTD6Mod
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble M1MoabDamageMulti = new(1)
+    internal static readonly ModSettingDouble M1MoabsDamageMulti = new(1)
     {
         category = MiddlePathDamageModifiers,
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble M1MoabDamageAdditive = new(1)
+    internal static readonly ModSettingDouble M1MoabsDamageAdditive = new(1)
     {
         category = MiddlePathDamageModifiers,
         requiresRestart = true
@@ -488,13 +488,13 @@ public class CustomizableTower : BloonsTD6Mod
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble M2MoabDamageMulti = new(1)
+    internal static readonly ModSettingDouble M2MoabsDamageMulti = new(1)
     {
         category = MiddlePathDamageModifiers,
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble M2MoabDamageAdditive = new(1)
+    internal static readonly ModSettingDouble M2MoabsDamageAdditive = new(1)
     {
         category = MiddlePathDamageModifiers,
         requiresRestart = true
@@ -542,13 +542,13 @@ public class CustomizableTower : BloonsTD6Mod
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble M3MoabDamageMulti = new(1)
+    internal static readonly ModSettingDouble M3MoabsDamageMulti = new(1)
     {
         category = MiddlePathDamageModifiers,
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble M3MoabDamageAdditive = new(1)
+    internal static readonly ModSettingDouble M3MoabsDamageAdditive = new(1)
     {
         category = MiddlePathDamageModifiers,
         requiresRestart = true
@@ -596,13 +596,13 @@ public class CustomizableTower : BloonsTD6Mod
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble M4MoabDamageMulti = new(1)
+    internal static readonly ModSettingDouble M4MoabsDamageMulti = new(1)
     {
         category = MiddlePathDamageModifiers,
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble M4MoabDamageAdditive = new(1)
+    internal static readonly ModSettingDouble M4MoabsDamageAdditive = new(1)
     {
         category = MiddlePathDamageModifiers,
         requiresRestart = true
@@ -650,13 +650,13 @@ public class CustomizableTower : BloonsTD6Mod
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble M5MoabDamageMulti = new(1)
+    internal static readonly ModSettingDouble M5MoabsDamageMulti = new(1)
     {
         category = MiddlePathDamageModifiers,
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble M5MoabDamageAdditive = new(1)
+    internal static readonly ModSettingDouble M5MoabsDamageAdditive = new(1)
     {
         category = MiddlePathDamageModifiers,
         requiresRestart = true
@@ -705,13 +705,13 @@ public class CustomizableTower : BloonsTD6Mod
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble B1MoabDamageMulti = new(1)
+    internal static readonly ModSettingDouble B1MoabsDamageMulti = new(1)
     {
         category = BottomPathDamageModifiers,
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble B1MoabDamageAdditive = new(1)
+    internal static readonly ModSettingDouble B1MoabsDamageAdditive = new(1)
     {
         category = BottomPathDamageModifiers,
         requiresRestart = true
@@ -759,13 +759,13 @@ public class CustomizableTower : BloonsTD6Mod
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble B2MoabDamageMulti = new(1)
+    internal static readonly ModSettingDouble B2MoabsDamageMulti = new(1)
     {
         category = BottomPathDamageModifiers,
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble B2MoabDamageAdditive = new(1)
+    internal static readonly ModSettingDouble B2MoabsDamageAdditive = new(1)
     {
         category = BottomPathDamageModifiers,
         requiresRestart = true
@@ -813,13 +813,13 @@ public class CustomizableTower : BloonsTD6Mod
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble B3MoabDamageMulti = new(1)
+    internal static readonly ModSettingDouble B3MoabsDamageMulti = new(1)
     {
         category = BottomPathDamageModifiers,
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble B3MoabDamageAdditive = new(1)
+    internal static readonly ModSettingDouble B3MoabsDamageAdditive = new(1)
     {
         category = BottomPathDamageModifiers,
         requiresRestart = true
@@ -867,13 +867,13 @@ public class CustomizableTower : BloonsTD6Mod
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble B4MoabDamageMulti = new(1)
+    internal static readonly ModSettingDouble B4MoabsDamageMulti = new(1)
     {
         category = BottomPathDamageModifiers,
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble B4MoabDamageAdditive = new(1)
+    internal static readonly ModSettingDouble B4MoabsDamageAdditive = new(1)
     {
         category = BottomPathDamageModifiers,
         requiresRestart = true
@@ -921,13 +921,13 @@ public class CustomizableTower : BloonsTD6Mod
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble B5MoabDamageMulti = new(1)
+    internal static readonly ModSettingDouble B5MoabsDamageMulti = new(1)
     {
         category = BottomPathDamageModifiers,
         requiresRestart = true
     };
 
-    internal static readonly ModSettingDouble B5MoabDamageAdditive = new(1)
+    internal static readonly ModSettingDouble B5MoabsDamageAdditive = new(1)
     {
         category = BottomPathDamageModifiers,
         requiresRestart = true
