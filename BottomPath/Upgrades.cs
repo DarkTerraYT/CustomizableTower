@@ -22,7 +22,7 @@ namespace BottomPath
         public override int Cost => BU1Cost;
         public override string DisplayName => BU1Name;
         public override string Description => BU1Desc;
-        public override int Priority => -2;
+        public override int Priority => -500;
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
@@ -30,6 +30,12 @@ namespace BottomPath
             foreach (var WeaponModel in towerModel.GetWeapons())
             {
                 var ProjectileModel = WeaponModel.projectile;
+
+                if (!ProjectileModel.HasBehavior<DamageModel>())
+                {
+                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None));
+                }
+
                 var DamageModel = ProjectileModel.GetDamageModel();
                 DamageModel.damage += BU1Damage;
 
@@ -105,7 +111,7 @@ namespace BottomPath
         public override int Cost => BU2Cost;
         public override string DisplayName => BU2Name;
         public override string Description => BU2Desc;
-        public override int Priority => -2;
+        public override int Priority => -500;
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
@@ -113,6 +119,12 @@ namespace BottomPath
             foreach (var WeaponModel in towerModel.GetWeapons())
             {
                 var ProjectileModel = WeaponModel.projectile;
+
+                if (!ProjectileModel.HasBehavior<DamageModel>())
+                {
+                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None));
+                }
+
                 var DamageModel = ProjectileModel.GetDamageModel();
                 DamageModel.damage += BU2Damage;
 
@@ -188,7 +200,7 @@ namespace BottomPath
         public override int Cost => BU3Cost;
         public override string DisplayName => BU3Name;
         public override string Description => BU3Desc;
-        public override int Priority => -2;
+        public override int Priority => -500;
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
@@ -196,6 +208,11 @@ namespace BottomPath
             foreach (var WeaponModel in towerModel.GetWeapons())
             {
                 var ProjectileModel = WeaponModel.projectile;
+                if (!ProjectileModel.HasBehavior<DamageModel>())
+                {
+                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None));
+                }
+
                 var DamageModel = ProjectileModel.GetDamageModel();
                 DamageModel.damage += BU3Damage;
 
@@ -271,7 +288,7 @@ namespace BottomPath
         public override int Cost => BU4Cost;
         public override string DisplayName => BU4Name;
         public override string Description => BU4Desc;
-        public override int Priority => -2;
+        public override int Priority => -500;
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
@@ -279,6 +296,11 @@ namespace BottomPath
             foreach (var WeaponModel in towerModel.GetWeapons())
             {
                 var ProjectileModel = WeaponModel.projectile;
+                if (!ProjectileModel.HasBehavior<DamageModel>())
+                {
+                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None));
+                }
+
                 var DamageModel = ProjectileModel.GetDamageModel();
                 DamageModel.damage += BU4Damage;
 
@@ -354,7 +376,7 @@ namespace BottomPath
         public override int Cost => BU5Cost;
         public override string DisplayName => BU5Name;
         public override string Description => BU5Desc;
-        public override int Priority => -2;
+        public override int Priority => -500;
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
@@ -362,6 +384,11 @@ namespace BottomPath
             foreach (var WeaponModel in towerModel.GetWeapons())
             {
                 var ProjectileModel = WeaponModel.projectile;
+                if (!ProjectileModel.HasBehavior<DamageModel>())
+                {
+                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None));
+                }
+
                 var DamageModel = ProjectileModel.GetDamageModel();
                 DamageModel.damage += BU5Damage;
 

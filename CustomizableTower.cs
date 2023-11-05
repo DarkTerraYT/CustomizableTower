@@ -19,7 +19,7 @@ public class CustomizableTower : BloonsTD6Mod
 
     public override void OnApplicationStart()
     {
-        CustomizableTowerClass.TotalDamage = 0;
+        CustomizableTowerClass.TotalDamage = Damage;
     }
 
     internal static readonly ModSettingCategory BaseTower = new("Base Tower Customization");

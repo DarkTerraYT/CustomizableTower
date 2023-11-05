@@ -29,6 +29,11 @@ namespace MiddlePath
             {
                 towerModel.GetAttackModel().weapons[0].emission = new ArcEmissionModel("Emission", M1MultiShotNumber, M1MultiShotOffset, M1MultiShotRotation, null, false, false);
                 var ProjectileModel = WeaponModel.projectile;
+                if (!ProjectileModel.HasBehavior<DamageModel>())
+                {
+                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None));
+                }
+
                 var DamageModel = ProjectileModel.GetDamageModel();
                 DamageModel.damage += MU1Damage;
 
@@ -112,6 +117,11 @@ namespace MiddlePath
             {
                 towerModel.GetAttackModel().weapons[0].emission = new ArcEmissionModel("Emission", M2MultiShotNumber, M2MultiShotOffset, M2MultiShotRotation, null, false, false);
                 var ProjectileModel = WeaponModel.projectile;
+                if (!ProjectileModel.HasBehavior<DamageModel>())
+                {
+                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None));
+                }
+
                 var DamageModel = ProjectileModel.GetDamageModel();
                 DamageModel.damage += MU2Damage;
 
@@ -194,6 +204,11 @@ namespace MiddlePath
             {
                 towerModel.GetAttackModel().weapons[0].emission = new ArcEmissionModel("Emission", M3MultiShotNumber, M3MultiShotOffset, M3MultiShotRotation, null, false, false);
                 var ProjectileModel = WeaponModel.projectile;
+                if (!ProjectileModel.HasBehavior<DamageModel>())
+                {
+                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None));
+                }
+
                 var DamageModel = ProjectileModel.GetDamageModel();
                 DamageModel.damage += MU3Damage;
 
@@ -276,6 +291,11 @@ namespace MiddlePath
             {
                 towerModel.GetAttackModel().weapons[0].emission = new ArcEmissionModel("Emission", M4MultiShotNumber, M4MultiShotOffset, M4MultiShotRotation, null, false, false);
                 var ProjectileModel = WeaponModel.projectile;
+                if (!ProjectileModel.HasBehavior<DamageModel>())
+                {
+                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None));
+                }
+
                 var DamageModel = ProjectileModel.GetDamageModel();
                 DamageModel.damage += MU4Damage;
 
@@ -357,6 +377,11 @@ namespace MiddlePath
             foreach (var WeaponModel in towerModel.GetWeapons())
             {
                 var ProjectileModel = WeaponModel.projectile;
+                if (!ProjectileModel.HasBehavior<DamageModel>())
+                {
+                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None));
+                }
+
                 var DamageModel = ProjectileModel.GetDamageModel();
                 DamageModel.damage += MU5Damage;
 

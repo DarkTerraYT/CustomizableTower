@@ -28,6 +28,11 @@ namespace TopPath
             foreach (var WeaponModel in towerModel.GetWeapons())
             {
                 var ProjectileModel = WeaponModel.projectile;
+                if (!ProjectileModel.HasBehavior<DamageModel>())
+                {
+                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None));
+                }
+
                 var DamageModel = ProjectileModel.GetDamageModel();
                 DamageModel.damage += TU1Damage;
                 WeaponModel.rate *= TU1Speed;
@@ -110,6 +115,11 @@ namespace TopPath
             foreach (var WeaponModel in towerModel.GetWeapons())
             {
                 var ProjectileModel = WeaponModel.projectile;
+                if (!ProjectileModel.HasBehavior<DamageModel>())
+                {
+                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None));
+                }
+
                 var DamageModel = ProjectileModel.GetDamageModel();
                 DamageModel.damage += TU2Damage;
                 WeaponModel.rate *= TU2Speed;
@@ -191,6 +201,11 @@ namespace TopPath
             foreach (var WeaponModel in towerModel.GetWeapons())
             {
                 var ProjectileModel = WeaponModel.projectile;
+                if (!ProjectileModel.HasBehavior<DamageModel>())
+                {
+                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None));
+                }
+
                 var DamageModel = ProjectileModel.GetDamageModel();
                 DamageModel.damage += TU3Damage;
 
@@ -272,6 +287,11 @@ namespace TopPath
             foreach (var WeaponModel in towerModel.GetWeapons())
             {
                 var ProjectileModel = WeaponModel.projectile;
+                if (!ProjectileModel.HasBehavior<DamageModel>())
+                {
+                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None));
+                }
+
                 var DamageModel = ProjectileModel.GetDamageModel();
                 DamageModel.damage += TU4Damage;
 
@@ -354,6 +374,11 @@ namespace TopPath
             foreach (var WeaponModel in towerModel.GetWeapons())
             {
                 var ProjectileModel = WeaponModel.projectile;
+                if (!ProjectileModel.HasBehavior<DamageModel>())
+                {
+                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None));
+                }
+
                 var DamageModel = ProjectileModel.GetDamageModel();
                 DamageModel.damage += TU5Damage;
                 WeaponModel.rate *= TU5Speed;
