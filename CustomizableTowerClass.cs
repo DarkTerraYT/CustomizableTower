@@ -147,7 +147,7 @@ namespace CustomizableTower
             }
             if (Thorn)
             {
-                towerModel.GetAttackModel().AddWeapon(Game.instance.model.GetTowerFromId("DruidMonkey").GetWeapon().Duplicate());
+                towerModel.GetAttackModel().AddWeapon(Game.instance.model.GetTowerFromId("Druid").GetWeapon().Duplicate());
             }
             if (SpikedMines)
             {
