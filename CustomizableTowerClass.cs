@@ -162,8 +162,11 @@ namespace CustomizableTower
                 var projectileModel_ = weaponModel_.projectile;
                 projectileModel_.pierce = Pierce;
                 weaponModel_.rate = Speed;
-                projectileModel_.GetBehavior<TravelStraitModel>().speed = ProjectileSpeed;
-                projectileModel_.GetBehavior<TravelStraitModel>().lifespan = ProjectileLifespan;
+                if (projectileModel_.HasBehavior<TravelStraitModel>())
+                {
+                    projectileModel_.GetBehavior<TravelStraitModel>().speed = ProjectileSpeed;
+                    projectileModel_.GetBehavior<TravelStraitModel>().lifespan = ProjectileLifespan;
+                }
                 if(!projectileModel_.HasBehavior<DamageModel>())
                 {
                     projectileModel_.AddBehavior(new DamageModel(null, 0, 9999999999999999999, false, false, true, Il2Cpp.BloonProperties.None, Il2Cpp.BloonProperties.None));
