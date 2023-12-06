@@ -1,1 +1,1 @@
-Fixed the insane damage caused by a little stupid of me and can now change the speed and lifespan of the projectiles
+Fixed for v40

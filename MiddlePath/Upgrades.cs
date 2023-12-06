@@ -8,6 +8,7 @@ using Il2Cpp;
 using Il2CppAssets.Scripts.Models.Towers.Filters;
 using Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions;
 using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
+using Il2CppAssets.Scripts.Unity;
 
 namespace MiddlePath
 {
@@ -31,7 +32,7 @@ namespace MiddlePath
                 var ProjectileModel = WeaponModel.projectile;
                 if (!ProjectileModel.HasBehavior<DamageModel>())
                 {
-                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None));
+                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None, false));
                 }
 
                 var DamageModel = ProjectileModel.GetDamageModel();
@@ -119,7 +120,7 @@ namespace MiddlePath
                 var ProjectileModel = WeaponModel.projectile;
                 if (!ProjectileModel.HasBehavior<DamageModel>())
                 {
-                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None));
+                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None, false));
                 }
 
                 var DamageModel = ProjectileModel.GetDamageModel();
@@ -206,7 +207,7 @@ namespace MiddlePath
                 var ProjectileModel = WeaponModel.projectile;
                 if (!ProjectileModel.HasBehavior<DamageModel>())
                 {
-                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None));
+                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None, false));
                 }
 
                 var DamageModel = ProjectileModel.GetDamageModel();
@@ -293,7 +294,7 @@ namespace MiddlePath
                 var ProjectileModel = WeaponModel.projectile;
                 if (!ProjectileModel.HasBehavior<DamageModel>())
                 {
-                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None));
+                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None, false));
                 }
 
                 var DamageModel = ProjectileModel.GetDamageModel();
@@ -379,7 +380,7 @@ namespace MiddlePath
                 var ProjectileModel = WeaponModel.projectile;
                 if (!ProjectileModel.HasBehavior<DamageModel>())
                 {
-                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None));
+                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None, false));
                 }
 
                 var DamageModel = ProjectileModel.GetDamageModel();

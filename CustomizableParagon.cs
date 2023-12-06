@@ -21,7 +21,7 @@ namespace CustomizableTower
             {
                 WeaponModel.rate = ParagonSpeed;
                 WeaponModel.projectile.pierce = ParagonPierce;
-                WeaponModel.projectile.AddBehavior(new DamageModel(null, CustomizableTowerClass.TotalDamage, 9999999999999999999, false, false, true, Il2Cpp.BloonProperties.None, Il2Cpp.BloonProperties.None));
+                WeaponModel.projectile.AddBehavior(new DamageModel(null, CustomizableTowerClass.TotalDamage, 9999999999999999999, false, false, true, Il2Cpp.BloonProperties.None, Il2Cpp.BloonProperties.None, false));
                 WeaponModel.emission = new ArcEmissionModel(null, ParagonMultiShotNumber, ParagonMultiShotOffset, ParagonMultiShotAngle, null, false, false);
             }
             towerModel.ApplyDisplay<CustomizableParagonDisplay>();
