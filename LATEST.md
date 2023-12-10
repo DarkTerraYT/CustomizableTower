@@ -1,1 +1,1 @@
-Fixed for v40
+Removed Top Path Glue, Bottom Path Glue and bottom path spikes along with choosing which spiked mines you use and is now always 4-0-0
