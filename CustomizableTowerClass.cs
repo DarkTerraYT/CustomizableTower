@@ -64,18 +64,7 @@ namespace CustomizableTower
             }
             if (Glue)
             {
-                if (GlueUsesTop)
-                {
-                    towerModel.GetAttackModel().AddWeapon(Game.instance.model.GetTowerFromId("GlueGunner-"+CorrosiveGlueType+"00").GetWeapon().Duplicate());
-                }
-                else if (GlueUsesBottom)
-                {
-                    towerModel.GetAttackModel().AddWeapon(Game.instance.model.GetTowerFromId("GlueGunner-00"+SlowerGlueType).GetWeapon().Duplicate());
-                }
-                else
-                {
-                    towerModel.GetAttackModel().AddWeapon(Game.instance.model.GetTowerFromId("GlueGunner").GetWeapon().Duplicate());
-                }
+                towerModel.GetAttackModel().AddWeapon(Game.instance.model.GetTowerFromId("GlueGunner").GetWeapon().Duplicate());
             }
             if (Sniper)
             {
@@ -151,11 +140,7 @@ namespace CustomizableTower
             }
             if (SpikedMines)
             {
-                towerModel.GetAttackModel().AddWeapon(Game.instance.model.GetTowerFromId("SpikeFactory-"+SpikedMinesType+"00").GetWeapon().Duplicate());
-            }
-            if(BottomPathSpikes)
-            {
-                towerModel.GetAttackModel().AddWeapon(Game.instance.model.GetTowerFromId("SpikeFactory-00"+BottomPathSpikesUsed).GetWeapon().Duplicate());
+                towerModel.GetAttackModel().AddWeapon(Game.instance.model.GetTowerFromId("SpikeFactory-400").GetWeapon().Duplicate());
             }
             foreach(var weaponModel_ in towerModel.GetWeapons())
             {

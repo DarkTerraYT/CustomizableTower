@@ -1050,37 +1050,6 @@ public class CustomizableTower : BloonsTD6Mod
         requiresRestart = true
     };
 
-
-    internal static readonly ModSettingBool GlueUsesTop = new(false)
-    {
-        category = ProjectileType,
-        requiresRestart = true
-    };
-
-    internal static readonly ModSettingInt CorrosiveGlueType = new(1)
-    {
-        category = ProjectileType,
-        requiresRestart = true,
-        min = 1,
-        max = 5,
-        description = "Which Top Path Upgrade it Uses. Default 1"
-    };
-
-    internal static readonly ModSettingBool GlueUsesBottom = new(false)
-    {
-        category = ProjectileType,
-        requiresRestart = true
-    };
-
-    internal static readonly ModSettingInt SlowerGlueType = new(1)
-    {
-        category = ProjectileType,
-        requiresRestart = true,
-        min = 1,
-        max = 5,
-        description = "Which Bottom Path Upgrade it Affects"
-    };
-
     internal static readonly ModSettingBool Sniper = new(false)
     {
         category = ProjectileType,
@@ -1117,35 +1086,12 @@ public class CustomizableTower : BloonsTD6Mod
         requiresRestart = true
     };
 
-    internal static readonly ModSettingBool BottomPathSpikes = new(false)
-    {
-        category = ProjectileType,
-        requiresRestart = true
-    };
-
-    internal static readonly ModSettingInt BottomPathSpikesUsed = new(3)
-    {
-        category = ProjectileType,
-        requiresRestart = true,
-        min = 3,
-        max = 5,
-        description = "Which Upgrade it Uses. 3 is Longer Life Spikes "
-    };
-
     internal static readonly ModSettingBool SpikedMines = new(false)
     {
         category = ProjectileType,
         requiresRestart = true
     };
 
-    internal static readonly ModSettingInt SpikedMinesType = new(1)
-    {
-        category = ProjectileType,
-        requiresRestart = true,
-        min = 1,
-        max = 5,
-        description = "Which Top Path Upgrade it Uses."
-    };
 
     internal static readonly ModSettingBool Nail = new(false)
     {
