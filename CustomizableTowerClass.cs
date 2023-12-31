@@ -14,6 +14,7 @@ using System.ComponentModel;
 using static CustomizableTower.CustomizableTower;
 using Il2CppAssets.Scripts.Models.Towers.Weapons;
 using System.Linq;
+using Il2CppAssets.Scripts.Models.Towers.Behaviors;
 
 namespace CustomizableTower
 {
@@ -41,6 +42,26 @@ namespace CustomizableTower
         public override void ModifyBaseTowerModel(TowerModel towerModel)
         {
             towerModel.ApplyDisplay<CustomizedTowerDisplay>();
+
+            if (towerModel.HasBehavior<HeroModel>())
+            {
+                towerModel.RemoveBehavior<HeroModel>();
+            }
+            if (towerModel.HasBehavior<TowerExpireModel>())
+            {
+                towerModel.RemoveBehavior<TowerExpireModel>();
+                if(TowerExpires)
+                {
+                    towerModel.AddBehavior<TowerExpireModel>(new("TowerExpireModel", TowerExpireTime, TowerExpireRounds, TowerExpiresOnRoundEnd, TowerExpiresOnDefeatScreen);
+                }
+            }
+            else if (TowerExpires)
+            {
+                towerModel.AddBehavior<TowerExpireModel>(new("TowerExpireModel", TowerExpireTime, TowerExpireRounds, TowerExpiresOnRoundEnd, TowerExpiresOnDefeatScreen);
+            }
+
+            towerModel.isSubTower = false;
+
             towerModel.GetAttackModel().RemoveWeapon(towerModel.GetAttackModel().weapons[0]);
             if (Dart)
             {
@@ -112,6 +133,14 @@ namespace CustomizableTower
             if (TrueSunGod)
             {
                 towerModel.GetAttackModel().AddWeapon(Game.instance.model.GetTowerFromId("SuperMonkey-500").GetWeapon().Duplicate());
+            }
+            if (AntiBloon)
+            {
+                towerModel.GetAttackModel().AddWeapon(Game.instance.model.GetTowerFromId("SuperMonkey-050").GetWeapon().Duplicate());
+            }
+            if (TechTerror)
+            {
+                towerModel.GetAttackModel().AddWeapon(Game.instance.model.GetTowerFromId("SuperMonkey-040").GetWeapon().Duplicate());
             }
             if (MonkeyRang)
             {

@@ -24,6 +24,37 @@ public class CustomizableTower : BloonsTD6Mod
 
     internal static readonly ModSettingCategory BaseTower = new("Base Tower Customization");
 
+    internal static readonly ModSettingBool TowerExpires = new(false)
+    {
+        requiresRestart = true,
+        category = BaseTower,
+        description = "Adds/Keeps TowerExpireModel on your tower, allowing your tower to expire like a sub tower"
+    };
+    internal static readonly ModSettingInt TowerExpireTime = new(30)
+    {
+        requiresRestart = true,
+        category = BaseTower,
+        description = "How many seconds it takes for the tower to expire (if this number is reached first then the tower will destroy itself)"
+    };
+    internal static readonly ModSettingInt TowerExpireRounds = new(5)
+    {
+        requiresRestart = true,
+        category = BaseTower,
+        description = "How many rounds until the tower expires (if this number is reached first then the tower will destroy itself)"
+    };
+    internal static readonly ModSettingBool TowerExpiresOnDefeatScreen = new(false)
+    {
+        requiresRestart = true,
+        category = BaseTower,
+        description = "If you lose the tower expires"
+    };
+    internal static readonly ModSettingBool TowerExpiresOnRoundEnd = new(false)
+    {
+        requiresRestart = true,
+        category = BaseTower,
+        description = "Does the same thing as if you set "
+    };
+
     internal static readonly ModSettingInt Cost = new(0)
     {
         category = BaseTower,
@@ -1106,6 +1137,17 @@ public class CustomizableTower : BloonsTD6Mod
     };
 
     internal static readonly ModSettingBool Ice = new(false)
+    {
+        category = ProjectileType,
+        requiresRestart = true
+    };
+
+    internal static readonly ModSettingBool TechTerror = new(false)
+    {
+        category = ProjectileType,
+        requiresRestart = true
+    };
+    internal static readonly ModSettingBool AntiBloon = new(false)
     {
         category = ProjectileType,
         requiresRestart = true
