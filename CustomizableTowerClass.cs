@@ -52,12 +52,12 @@ namespace CustomizableTower
                 towerModel.RemoveBehavior<TowerExpireModel>();
                 if(TowerExpires)
                 {
-                    towerModel.AddBehavior<TowerExpireModel>(new("TowerExpireModel", TowerExpireTime, TowerExpireRounds, TowerExpiresOnRoundEnd, TowerExpiresOnDefeatScreen);
+                    towerModel.AddBehavior<TowerExpireModel>(new("TowerExpireModel", TowerExpireTime, TowerExpireRounds, TowerExpiresOnRoundEnd, TowerExpiresOnDefeatScreen));
                 }
             }
             else if (TowerExpires)
             {
-                towerModel.AddBehavior<TowerExpireModel>(new("TowerExpireModel", TowerExpireTime, TowerExpireRounds, TowerExpiresOnRoundEnd, TowerExpiresOnDefeatScreen);
+                towerModel.AddBehavior<TowerExpireModel>(new("TowerExpireModel", TowerExpireTime, TowerExpireRounds, TowerExpiresOnRoundEnd, TowerExpiresOnDefeatScreen));
             }
 
             towerModel.isSubTower = false;
