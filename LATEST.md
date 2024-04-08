@@ -1,1 +1,1 @@
-Removed Top Path Glue, Bottom Path Glue and bottom path spikes along with choosing which spiked mines you use and is now always 4-0-0
+Added Exporting & Importing your settings.

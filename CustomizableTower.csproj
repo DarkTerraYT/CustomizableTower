@@ -22,6 +22,6 @@
       <None Remove="MiddlePath\MUpgrade2-Icon.png" />
       <None Remove="MiddlePath\MUpgrade3-Icon.png" />
       <None Remove="MiddlePath\MUpgrade4-Icon.png" />
-      <None Remove="MiddlePath\MUpgrade5-Icon.png" />
+	  <None Remove="MiddlePath\MUpgrade5-Icon.png" />
     </ItemGroup>
 </Project>
