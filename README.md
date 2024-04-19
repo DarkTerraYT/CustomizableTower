@@ -10,6 +10,8 @@ Adds a Completely Customizable Tower to The Game. You Can Customize it's Stats i
 Please don't use this in competitive modes, one: it could get your account flagged, and two: it ruins the fun for others.
 
 If you want to change any displays/icons for the tower simply download this source code and change the pngs and compile the mod yourself. 
+# VIDEO VERSION [HERE](https://www.youtube.com/watch?v=ART9acrIMgU)
+
 You'll need Visual Studio and .net 6.0. In the mod menu create a mod called CustomizableTower and put the source code into the mod folder.
 You can see where the mod sources are kept in the config for the Mod Helper.
 After that open the .sln file which should be called CustomizableTower.sln and go to build and click on Build CustomizableTower, Build Solution (which is used when you have multiple projects in the solution) or press Ctrl+B.
