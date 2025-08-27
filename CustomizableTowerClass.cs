@@ -183,7 +183,7 @@ namespace CustomizableTower
                 }
                 if(!projectileModel_.HasBehavior<DamageModel>())
                 {
-                    projectileModel_.AddBehavior(new DamageModel(null, 0, 9999999999999999999, false, false, true, Il2Cpp.BloonProperties.None, Il2Cpp.BloonProperties.None, true));
+                    projectileModel_.AddBehavior(new DamageModel(null, 0, 9999999999999999999, false, false, true, Il2Cpp.BloonProperties.None, Il2Cpp.BloonProperties.None, true, false));
                 }
                 var DamageModel = projectileModel_.GetDamageModel();
                 DamageModel.damage = Damage;

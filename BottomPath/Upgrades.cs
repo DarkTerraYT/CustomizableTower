@@ -33,7 +33,7 @@ namespace BottomPath
 
                 if (!ProjectileModel.HasBehavior<DamageModel>())
                 {
-                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None, false));
+                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, false, BloonProperties.None, BloonProperties.None, false, false));
                 }
 
                 var DamageModel = ProjectileModel.GetDamageModel();
@@ -122,7 +122,7 @@ namespace BottomPath
 
                 if (!ProjectileModel.HasBehavior<DamageModel>())
                 {
-                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None, false));
+                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None, false, false));
                 }
 
                 var DamageModel = ProjectileModel.GetDamageModel();
@@ -210,7 +210,7 @@ namespace BottomPath
                 var ProjectileModel = WeaponModel.projectile;
                 if (!ProjectileModel.HasBehavior<DamageModel>())
                 {
-                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None, false));
+                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None, false, false));
                 }
 
                 var DamageModel = ProjectileModel.GetDamageModel();
@@ -298,7 +298,7 @@ namespace BottomPath
                 var ProjectileModel = WeaponModel.projectile;
                 if (!ProjectileModel.HasBehavior<DamageModel>())
                 {
-                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None, false));
+                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None, false, false));
                 }
 
                 var DamageModel = ProjectileModel.GetDamageModel();
@@ -386,7 +386,7 @@ namespace BottomPath
                 var ProjectileModel = WeaponModel.projectile;
                 if (!ProjectileModel.HasBehavior<DamageModel>())
                 {
-                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None, false));
+                    ProjectileModel.AddBehavior(new DamageModel("DamageModel_", TotalDamage, -1, false, false, true, BloonProperties.None, BloonProperties.None, false, false));
                 }
 
                 var DamageModel = ProjectileModel.GetDamageModel();
