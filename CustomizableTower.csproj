@@ -9,6 +9,10 @@
         <Optimize>False</Optimize>
         <DebugType>embedded</DebugType>
     </PropertyGroup>
+    <ItemGroup>
+      <Folder Include="Api\Models\Filters\" />
+      <Folder Include="Api\Tower\Behavior\" />
+    </ItemGroup>
 
     <Import Project="..\btd6.targets" />
 </Project>
